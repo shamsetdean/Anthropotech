@@ -1,0 +1,1458 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthropotech · Magazine</title>
+<meta property="og:title" content="Anthropotech · Magazine">
+<meta property="og:description" content="Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.">
+<meta property="og:url" content="https://shamsetdean.github.io/Anthropotech/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Anthropotech · Magazine">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── NOMBRE D'OR : base 16px × φ^n ──
+   φ^-2 = 6.11px  → 0.382rem  (labels, meta)
+   φ^-1 = 9.89px  → 0.618rem  (small)
+   φ^0  = 16px    → 1rem      (body)
+   φ^1  = 25.89px → 1.618rem  (lead / h3)
+   φ^2  = 41.89px → 2.618rem  (h2)
+   φ^3  = 67.77px → 4.236rem  (h1 hero)
+   Espacement : padding/gap suivent aussi φ (0.618, 1, 1.618, 2.618rem)
+*/
+
+:root {
+  --bg: #0f0f0e;
+  --surface: #181816;
+  --surface2: #202020;
+  --ink: #e6e2d8;
+  --ink-mid: #94908a;
+  --ink-dim: #5a5750;
+  --line: #272724;
+  --accent: #c9a84c;
+  --accent2: #6e87a0;
+
+  --f-serif: 'Playfair Display', Georgia, serif;
+  --f-sans: 'DM Sans', system-ui, sans-serif;
+
+  /* Échelle nombre d'or */
+  --t-xs:   0.382rem;
+  --t-sm:   0.618rem;
+  --t-base: 1rem;
+  --t-lead: 1.618rem;
+  --t-h2:   2.618rem;
+  --t-h1:   4.236rem;
+
+  /* Espacements nombre d'or */
+  --s-xs:  0.382rem;
+  --s-sm:  0.618rem;
+  --s-md:  1rem;
+  --s-lg:  1.618rem;
+  --s-xl:  2.618rem;
+  --s-2xl: 4.236rem;
+}
+
+html { font-size: 16px; }
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--f-sans);
+  font-weight: 300;
+  font-size: var(--t-base);
+  line-height: 1.618;
+  min-height: 100vh;
+}
+
+/* ── NAV ── */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--s-md) var(--s-2xl);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: rgba(15,15,14,0.96);
+  backdrop-filter: blur(12px);
+  z-index: 200;
+}
+
+.nav-logo {
+  font-family: var(--f-serif);
+  font-size: var(--t-lead);
+  font-weight: 400;
+  color: var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: -0.01em;
+}
+.nav-logo em { font-style: italic; color: var(--accent); }
+
+.nav-menu { display: flex; list-style: none; align-items: center; }
+
+.nav-item { position: relative; }
+.nav-item > a {
+  font-size: var(--t-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  text-decoration: none;
+  padding: var(--s-sm) var(--s-md);
+  display: block;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+.nav-item > a:hover { color: var(--ink); }
+
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  min-width: 200px;
+  display: none;
+  z-index: 300;
+}
+.nav-item:hover .nav-dropdown { display: block; }
+
+.nav-dropdown a {
+  display: block;
+  padding: var(--s-md) var(--s-xl);
+  font-size: var(--t-base);
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--ink-mid);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition: all 0.2s;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.nav-dropdown a:last-child { border-bottom: none; }
+.nav-dropdown a:hover { color: var(--accent); background: var(--surface2); padding-left: calc(var(--s-xl) + 4px); }
+
+.nav-sub { position: relative; }
+.nav-sub-dropdown {
+  position: absolute;
+  left: 100%; top: 0;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  min-width: 180px;
+  display: none;
+  z-index: 400;
+}
+.nav-sub:hover .nav-sub-dropdown { display: block; }
+
+.btn-write {
+  font-family: var(--f-sans);
+  font-size: var(--t-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: var(--s-xs) var(--s-md);
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.2s;
+}
+.btn-write:hover { background: var(--accent); color: var(--bg); }
+
+/* ── VIEWS ── */
+.view { display: none; }
+.view.active { display: block; }
+
+/* ── HERO ── */
+.hero {
+  padding: var(--s-2xl) var(--s-2xl) var(--s-xl);
+  max-width: 860px;
+  animation: fadeUp 0.8s ease both;
+}
+.hero-right {
+  text-align: right;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.hero-right .hero-sub {
+  margin-left: auto;
+  border-left: none;
+  border-right: 1px solid var(--accent);
+  padding-left: 0;
+  padding-right: var(--s-md);
+  text-align: right;
+}
+.hero-eyebrow {
+  font-size: var(--t-xs);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--s-lg);
+}
+.hero h1 {
+  font-family: var(--f-serif);
+  font-size: clamp(var(--t-h2), 6vw, var(--t-h1));
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: var(--s-lg);
+  letter-spacing: -0.02em;
+}
+.hero h1 em { font-style: italic; color: var(--accent); }
+.hero-sub {
+  font-size: var(--t-base);
+  color: var(--ink-mid);
+  max-width: 440px;
+  border-left: 1px solid var(--accent);
+  padding-left: var(--s-md);
+  line-height: 1.618;
+  font-style: italic;
+}
+
+/* ── CAT STRIP ── */
+.cat-strip {
+  padding: var(--s-sm) var(--s-2xl);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+}
+.cat-tab {
+  font-family: var(--f-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  padding: var(--s-sm) var(--s-lg);
+  cursor: pointer;
+  border-right: 1px solid var(--line);
+  transition: all 0.2s;
+  white-space: nowrap;
+  background: transparent;
+  border-top: none; border-bottom: none; border-left: none;
+}
+.cat-tab:first-child { padding-left: 0; }
+.cat-tab:hover { color: var(--ink); }
+.cat-tab.active { color: var(--accent); }
+
+/* ── ARTICLES GRID ── */
+.articles-section { padding: var(--s-xl) var(--s-2xl); }
+
+.section-title {
+  font-family: var(--f-serif);
+  font-size: var(--t-lead);
+  font-weight: 400;
+  margin-bottom: var(--s-xl);
+  padding-bottom: var(--s-md);
+  border-bottom: 1px solid var(--line);
+}
+.section-title em { font-style: italic; color: var(--accent); }
+
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  border: 1px solid var(--line);
+}
+
+.article-card {
+  padding: var(--s-xl);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  cursor: pointer;
+  transition: background 0.2s;
+  animation: fadeUp 0.6s ease both;
+  position: relative;
+}
+.article-card:hover { background: var(--surface); }
+
+.article-card-actions {
+  position: absolute;
+  top: var(--s-md);
+  right: var(--s-md);
+  display: none;
+  gap: var(--s-xs);
+}
+.article-card:hover .article-card-actions { display: flex; }
+
+.btn-action {
+  font-family: var(--f-sans);
+  font-size: var(--t-xs);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: var(--s-xs) var(--s-sm);
+  cursor: pointer;
+  border: 1px solid var(--line);
+  background: var(--surface2);
+  color: var(--ink-mid);
+  transition: all 0.2s;
+}
+.btn-action:hover { border-color: var(--accent); color: var(--accent); }
+.btn-action.del:hover { border-color: #a04040; color: #c05555; }
+
+.article-cat {
+  font-size: var(--t-xs);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: var(--s-md);
+}
+.article-title {
+  font-family: var(--f-serif);
+  font-size: var(--t-lead);
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: var(--s-sm);
+  color: var(--ink);
+}
+.article-title em { font-style: italic; color: var(--accent); }
+.article-excerpt {
+  font-size: var(--t-sm);
+  color: var(--ink-dim);
+  line-height: 1.618;
+  margin-bottom: var(--s-md);
+}
+.article-meta {
+  font-size: var(--t-xs);
+  color: var(--ink-dim);
+  letter-spacing: 0.08em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  padding: var(--s-2xl) var(--s-xl);
+  text-align: center;
+  color: var(--ink-dim);
+  border: 1px dashed var(--line);
+}
+.empty-state strong {
+  display: block;
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: var(--t-lead);
+  color: var(--ink-mid);
+  margin-bottom: var(--s-sm);
+}
+
+/* ── ARTICLE FULL ── */
+.article-full-wrap {
+  padding: var(--s-2xl);
+  max-width: 720px;
+  margin: 0 auto;
+  animation: fadeUp 0.6s ease both;
+}
+.article-back {
+  font-size: var(--t-xs);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  cursor: pointer;
+  margin-bottom: var(--s-xl);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-sm);
+  transition: color 0.2s;
+}
+.article-back:hover { color: var(--accent); }
+.article-full-cat {
+  font-size: var(--t-xs);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent2);
+  margin-bottom: var(--s-md);
+}
+.article-full-title {
+  font-family: var(--f-serif);
+  font-size: clamp(var(--t-h2), 4vw, var(--t-h1));
+  font-weight: 400;
+  line-height: 1.08;
+  margin-bottom: var(--s-lg);
+  letter-spacing: -0.02em;
+}
+.article-full-title em { font-style: italic; color: var(--accent); }
+.article-full-meta {
+  font-size: var(--t-xs);
+  color: var(--ink-dim);
+  letter-spacing: 0.1em;
+  padding: var(--s-md) 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: var(--s-xl);
+  display: flex;
+  justify-content: space-between;
+}
+.article-full-body {
+  font-size: var(--t-base);
+  color: var(--ink-mid);
+  line-height: 1.618;
+  white-space: pre-wrap;
+}
+.article-full-edit {
+  margin-top: var(--s-xl);
+  padding-top: var(--s-lg);
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: var(--s-md);
+}
+
+/* ── A PROPOS ── */
+.about-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: var(--s-2xl);
+  animation: fadeUp 0.8s ease both;
+}
+.about-eyebrow {
+  font-size: var(--t-xs);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--s-lg);
+}
+.about-title {
+  font-family: var(--f-serif);
+  font-size: clamp(var(--t-h2), 5vw, var(--t-h1));
+  font-weight: 400;
+  line-height: 1.08;
+  margin-bottom: var(--s-xl);
+  letter-spacing: -0.02em;
+}
+.about-title em { font-style: italic; color: var(--accent); }
+.about-body {
+  font-size: var(--t-base);
+  color: var(--ink-mid);
+  line-height: 1.618;
+  border-left: 1px solid var(--accent);
+  padding-left: var(--s-xl);
+  margin-bottom: var(--s-xl);
+}
+.about-body p { margin-bottom: var(--s-lg); }
+.about-body p:last-child { margin-bottom: 0; }
+.about-body strong { color: var(--ink); font-weight: 500; }
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-sm);
+  margin-top: var(--s-xl);
+  margin-bottom: var(--s-xl);
+}
+.about-tag {
+  font-size: var(--t-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: var(--s-xs) var(--s-md);
+  border: 1px solid var(--line);
+  color: var(--ink-dim);
+}
+.about-mention {
+  font-size: var(--t-sm);
+  color: var(--ink-dim);
+  line-height: 1.618;
+  padding: var(--s-lg);
+  border: 1px solid var(--line);
+}
+.about-mention strong { color: var(--ink-mid); font-weight: 500; }
+
+/* ── PHOTO ── */
+.photo-wrap { padding: var(--s-xl) var(--s-2xl); animation: fadeUp 0.8s ease both; }
+
+.photo-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: var(--s-xl);
+  padding-bottom: var(--s-lg);
+  border-bottom: 1px solid var(--line);
+}
+.photo-hero-title {
+  font-family: var(--f-serif);
+  font-size: var(--t-h2);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+.photo-hero-title em { font-style: italic; color: var(--accent); }
+.photo-hero-sub {
+  font-size: var(--t-sm);
+  color: var(--ink-dim);
+  margin-top: var(--s-xs);
+  font-style: italic;
+}
+.photo-stat-num {
+  font-family: var(--f-serif);
+  font-size: var(--t-h2);
+  color: var(--ink);
+  display: block;
+  text-align: right;
+}
+.photo-stat-label {
+  font-size: var(--t-xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.photo-filters {
+  display: flex;
+  margin-bottom: var(--s-xl);
+}
+.photo-filter {
+  font-family: var(--f-sans);
+  font-size: var(--t-xs);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  padding: var(--s-xs) var(--s-md);
+  cursor: pointer;
+  border: 1px solid var(--line);
+  border-right: none;
+  transition: all 0.2s;
+  background: transparent;
+}
+.photo-filter:last-child { border-right: 1px solid var(--line); }
+.photo-filter:hover { color: var(--ink); }
+.photo-filter.active { color: var(--bg); background: var(--ink); border-color: var(--ink); }
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.photo-item {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--surface2);
+}
+.photo-item img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: transform 0.5s ease, filter 0.3s;
+  display: block;
+}
+.photo-item:hover img { transform: scale(1.03); filter: grayscale(60%); }
+
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0);
+  display: flex;
+  align-items: flex-end;
+  padding: var(--s-md);
+  transition: background 0.3s;
+}
+.photo-item:hover .photo-overlay { background: rgba(0,0,0,0.5); }
+
+.photo-info {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: all 0.3s;
+}
+.photo-item:hover .photo-info { opacity: 1; transform: translateY(0); }
+.photo-info-title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: var(--t-base);
+  color: white;
+  display: block;
+}
+.photo-info-cat {
+  font-size: var(--t-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+}
+
+.photo-delete {
+  position: absolute;
+  top: var(--s-sm);
+  right: var(--s-sm);
+  font-family: var(--f-sans);
+  font-size: var(--t-xs);
+  letter-spacing: 0.1em;
+  background: rgba(0,0,0,0.7);
+  color: rgba(255,255,255,0.5);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: var(--s-xs) var(--s-sm);
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.photo-item:hover .photo-delete { opacity: 1; }
+.photo-delete:hover { color: #c05555; border-color: #c05555; }
+
+.photo-placeholder {
+  aspect-ratio: 1;
+  background: var(--surface);
+  border: 1px dashed var(--line);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  cursor: pointer; transition: all 0.2s; gap: var(--s-sm);
+}
+.photo-placeholder:hover { border-color: var(--accent); }
+.photo-placeholder span {
+  font-size: var(--t-xs);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.photo-placeholder:hover span { color: var(--accent); }
+
+/* ── LIGHTBOX ── */
+.lightbox {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.96);
+  z-index: 800;
+  align-items: center; justify-content: center; flex-direction: column;
+}
+.lightbox.open { display: flex; }
+.lightbox img {
+  max-width: 88vw; max-height: 78vh;
+  object-fit: contain;
+  filter: grayscale(100%);
+  animation: fadeUp 0.3s ease both;
+}
+.lightbox-info { margin-top: var(--s-lg); text-align: center; animation: fadeUp 0.4s ease 0.1s both; }
+.lightbox-title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: var(--t-lead);
+  color: var(--ink);
+  margin-bottom: var(--s-xs);
+}
+.lightbox-meta { font-size: var(--t-xs); color: var(--ink-dim); letter-spacing: 0.12em; text-transform: uppercase; }
+.lightbox-close {
+  position: absolute; top: var(--s-lg); right: var(--s-xl);
+  font-size: var(--t-lead); color: var(--ink-dim); cursor: pointer;
+  background: none; border: none; transition: color 0.2s;
+  font-family: var(--f-sans);
+}
+.lightbox-close:hover { color: var(--ink); }
+.lightbox-nav {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  font-size: var(--t-h2); color: var(--ink-dim); cursor: pointer;
+  background: none; border: none; transition: color 0.2s; padding: var(--s-md);
+  font-family: var(--f-serif);
+}
+.lightbox-nav:hover { color: var(--ink); }
+.lightbox-nav.prev { left: var(--s-lg); }
+.lightbox-nav.next { right: var(--s-lg); }
+
+/* ── MODALS ── */
+.modal-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.88); z-index: 500;
+  align-items: center; justify-content: center;
+}
+.modal-overlay.open { display: flex; }
+
+.modal {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  width: 90%; max-width: 640px;
+  max-height: 90vh; overflow-y: auto;
+  padding: var(--s-xl);
+  animation: fadeUp 0.4s ease both;
+  position: relative;
+}
+.modal-title {
+  font-family: var(--f-serif);
+  font-size: var(--t-lead);
+  font-weight: 400;
+  margin-bottom: var(--s-xl);
+}
+.modal-title em { font-style: italic; color: var(--accent); }
+.modal-close {
+  position: absolute; top: var(--s-md); right: var(--s-lg);
+  font-size: var(--t-base); cursor: pointer; color: var(--ink-dim);
+  background: none; border: none; font-family: var(--f-sans);
+}
+
+.field { margin-bottom: var(--s-lg); }
+.field label {
+  display: block; font-size: var(--t-xs);
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ink-dim); margin-bottom: var(--s-sm);
+}
+.field input, .field select, .field textarea {
+  width: 100%; background: var(--bg);
+  border: 1px solid var(--line); color: var(--ink);
+  font-family: var(--f-sans); font-size: var(--t-base);
+  padding: var(--s-sm) var(--s-md);
+  outline: none; transition: border-color 0.2s;
+}
+.field input:focus, .field select:focus, .field textarea:focus { border-color: var(--accent); }
+.field textarea { min-height: 180px; resize: vertical; line-height: 1.618; }
+.field select option { background: var(--surface); }
+
+.modal-actions { display: flex; gap: var(--s-md); justify-content: flex-end; margin-top: var(--s-xl); }
+
+.btn-cancel {
+  font-family: var(--f-sans); font-size: var(--t-xs);
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink-dim); background: none; border: 1px solid var(--line);
+  padding: var(--s-sm) var(--s-lg); cursor: pointer; transition: all 0.2s;
+}
+.btn-cancel:hover { color: var(--ink); border-color: var(--ink-mid); }
+
+.btn-publish {
+  font-family: var(--f-sans); font-size: var(--t-xs);
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--bg); background: var(--accent); border: 1px solid var(--accent);
+  padding: var(--s-sm) var(--s-lg); cursor: pointer; transition: opacity 0.2s;
+}
+.btn-publish:hover { opacity: 0.85; }
+
+/* PASSWORD */
+.pwd-overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.92); z-index: 600;
+  align-items: center; justify-content: center;
+}
+.pwd-overlay.open { display: flex; }
+.pwd-box {
+  background: var(--surface); border: 1px solid var(--line);
+  padding: var(--s-xl); width: 360px;
+  animation: fadeUp 0.4s ease both;
+  position: relative;
+}
+.pwd-close {
+  position: absolute; top: var(--s-md); right: var(--s-md);
+  background: none; border: none; color: var(--ink-dim);
+  font-size: 1.4rem; cursor: pointer; font-family: var(--f-sans);
+  line-height: 1; transition: color 0.2s;
+}
+.pwd-close:hover { color: var(--ink); }
+.pwd-title {
+  font-family: var(--f-serif); font-size: var(--t-h2);
+  font-style: italic; color: var(--accent); margin-bottom: var(--s-lg);
+  line-height: 1.1;
+}
+.pwd-box input {
+  width: 100%; background: var(--bg); border: 1px solid var(--line);
+  color: var(--ink); font-family: var(--f-sans); font-size: 1.2rem;
+  padding: var(--s-md) var(--s-lg); outline: none;
+  margin-bottom: var(--s-md); transition: border-color 0.2s;
+}
+.pwd-box input:focus { border-color: var(--accent); }
+.pwd-box input::placeholder { color: var(--ink-dim); font-size: 1rem; }
+.pwd-error { font-size: var(--t-base); color: #c05555; margin-bottom: var(--s-sm); display: none; }
+.pwd-box .btn-publish { font-size: var(--t-base); padding: var(--s-md) var(--s-lg); }
+
+/* UPLOAD */
+.upload-zone {
+  border: 1px dashed var(--line); padding: var(--s-xl);
+  text-align: center; cursor: pointer; transition: border-color 0.2s;
+}
+.upload-zone:hover { border-color: var(--accent); }
+.upload-zone input { display: none; }
+.upload-zone p { font-size: var(--t-sm); color: var(--ink-dim); }
+.upload-preview {
+  width: 100%; max-height: 200px; object-fit: cover;
+  filter: grayscale(100%); margin-top: var(--s-md); display: none;
+}
+
+/* FOOTER */
+footer {
+  padding: var(--s-lg) var(--s-2xl);
+  border-top: 1px solid var(--line);
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: var(--t-xs); color: var(--ink-dim); letter-spacing: 0.08em;
+  margin-top: var(--s-2xl);
+}
+footer em { font-style: italic; color: var(--accent); }
+
+
+/* Anti copier-coller */
+.article-full-body, .article-card {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  nav {
+    padding: var(--s-md);
+    flex-wrap: wrap;
+    gap: var(--s-sm);
+    position: relative;
+  }
+  .nav-logo { font-size: var(--t-base); }
+  .nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background: var(--surface);
+    border-top: 1px solid var(--line);
+    padding: var(--s-sm) 0;
+    order: 3;
+  }
+  .nav-menu.open { display: flex; }
+  .nav-hamburger { display: flex !important; align-items: center; }
+  .nav-item > a {
+    padding: var(--s-md) var(--s-lg);
+    font-size: var(--t-sm);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-dropdown {
+    position: static;
+    display: none;
+    background: var(--surface2);
+    border: none;
+    padding-left: var(--s-lg);
+  }
+  .nav-item.open > .nav-dropdown { display: block; }
+  .nav-sub-dropdown {
+    position: static;
+    display: none;
+    background: var(--bg);
+    border: none;
+    padding-left: var(--s-lg);
+  }
+  .nav-sub.open > .nav-sub-dropdown { display: block; }
+
+  .hero { padding: var(--s-xl) var(--s-md) var(--s-lg); }
+  .hero-right { text-align: left; }
+  .hero-right .hero-sub {
+    margin-left: 0;
+    border-left: 1px solid var(--accent);
+    border-right: none;
+    padding-left: var(--s-md);
+    padding-right: 0;
+  }
+  .hero h1 { font-size: var(--t-h2); }
+
+  .cat-strip { padding: var(--s-sm) var(--s-md); }
+  .articles-section { padding: var(--s-lg) var(--s-md); }
+  .articles-grid { grid-template-columns: 1fr; }
+
+  .photo-wrap { padding: var(--s-lg) var(--s-md); }
+  .photo-hero { flex-direction: column; gap: var(--s-md); align-items: flex-start; }
+  .photo-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .about-wrap { padding: var(--s-xl) var(--s-md); }
+  .article-full-wrap { padding: var(--s-lg) var(--s-md); }
+  .article-full-title { font-size: var(--t-h2); }
+
+  .modal { padding: var(--s-lg) var(--s-md); width: 95%; }
+  .pwd-box { width: 90%; }
+
+  .share-bar { flex-wrap: wrap; gap: var(--s-sm); }
+}
+
+@media (max-width: 480px) {
+  .photo-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: var(--t-lead); }
+  .hero-eyebrow { font-size: 0.5rem; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <button class="nav-hamburger" onclick="toggleMobileMenu()" style="display:none;background:none;border:none;color:var(--ink);font-size:1.4rem;cursor:pointer;order:-1">☰</button>
+  <a class="nav-logo" onclick="showView('home')">Anthropo<em>tech</em></a>
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a onclick="filterCat('tech')">Tech</a>
+      <div class="nav-dropdown">
+        <a onclick="filterCat('tesla')">Tesla</a>
+        <div class="nav-sub">
+          <a onclick="filterCat('os')">OS ▶</a>
+          <div class="nav-sub-dropdown">
+            <a onclick="filterCat('apple')">Apple</a>
+            <a onclick="filterCat('linux')">Linux</a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a onclick="filterCat('humian')">&amp; Hum(iA)n</a>
+    </li>
+    <li class="nav-item">
+      <a onclick="showView('photo')">Photo</a>
+    </li>
+    <li class="nav-item">
+      <a onclick="showView('about')">À propos</a>
+    </li>
+  </ul>
+  <div>
+    <button class="btn-write" onclick="openWrite()">Écrire</button>
+  </div>
+</nav>
+
+<!-- HOME -->
+<div id="view-home" class="view active">
+  <div class="hero hero-right">
+    <p class="hero-eyebrow">Anthropotech — Magazine</p>
+    <h1>Humain <em>&amp;</em> Numérique</h1>
+    <p class="hero-sub">Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</p>
+  </div>
+  <div class="cat-strip">
+    <button class="cat-tab active" onclick="filterCat('all',this)">Tous</button>
+    <button class="cat-tab" onclick="filterCat('tech',this)">Tech</button>
+    <button class="cat-tab" onclick="filterCat('tesla',this)">Tesla</button>
+    <button class="cat-tab" onclick="filterCat('os',this)">OS</button>
+    <button class="cat-tab" onclick="filterCat('apple',this)">Apple</button>
+    <button class="cat-tab" onclick="filterCat('linux',this)">Linux</button>
+    <button class="cat-tab" onclick="filterCat('humian',this)">&amp; Hum(iA)n</button>
+  </div>
+  <div class="articles-section">
+    <h2 class="section-title" id="section-title">Tous les <em>articles</em></h2>
+    <div class="articles-grid" id="articles-grid"></div>
+  </div>
+</div>
+
+<!-- ARTICLE FULL -->
+<div id="view-article" class="view">
+  <div class="article-full-wrap">
+    <div class="article-back" onclick="showView('home')">— Retour</div>
+    <div class="article-full-cat" id="av-cat"></div>
+    <h1 class="article-full-title" id="av-title"></h1>
+    <div class="article-full-meta" id="av-meta"></div>
+    <div class="share-bar" id="share-bar" style="display:flex;gap:var(--s-md);padding:var(--s-md) 0;border-bottom:1px solid var(--line);margin-bottom:var(--s-xl);">
+      <span style="font-size:var(--t-xs);letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-dim);align-self:center;">Partager</span>
+      <a id="share-tw" href="#" target="_blank" style="font-size:var(--t-xs);letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line);padding:var(--s-xs) var(--s-md);text-decoration:none;transition:all 0.2s;" onmouseover="this.style.color='var(--accent)';this.style.borderColor='var(--accent)'" onmouseout="this.style.color='var(--ink-dim)';this.style.borderColor='var(--line)'">X / Twitter</a>
+      <a id="share-fb" href="#" target="_blank" style="font-size:var(--t-xs);letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line);padding:var(--s-xs) var(--s-md);text-decoration:none;transition:all 0.2s;" onmouseover="this.style.color='var(--accent)';this.style.borderColor='var(--accent)'" onmouseout="this.style.color='var(--ink-dim)';this.style.borderColor='var(--line)'">Facebook</a>
+      <a id="share-wa" href="#" target="_blank" style="font-size:var(--t-xs);letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-dim);border:1px solid var(--line);padding:var(--s-xs) var(--s-md);text-decoration:none;transition:all 0.2s;" onmouseover="this.style.color='var(--accent)';this.style.borderColor='var(--accent)'" onmouseout="this.style.color='var(--ink-dim)';this.style.borderColor='var(--line)'">WhatsApp</a>
+    </div>
+    <div class="article-full-body" id="av-body"></div>
+    <div class="article-full-edit">
+      <button class="btn-cancel" id="btn-edit-article" onclick="editCurrentArticle()">Modifier</button>
+      <button class="btn-cancel del" id="btn-del-article" onclick="deleteCurrentArticle()" style="color:#c05555;border-color:#6a3030">Supprimer</button>
+    </div>
+  </div>
+</div>
+
+<!-- PHOTO -->
+<div id="view-photo" class="view">
+  <div class="photo-wrap">
+    <div class="photo-hero">
+      <div>
+        <div class="photo-hero-title">Architecture <em>&amp; N&amp;B</em></div>
+        <div class="photo-hero-sub">Photographie urbaine — Noir &amp; Blanc — Formes &amp; matières</div>
+      </div>
+      <div style="text-align:right">
+        <span class="photo-stat-num" id="photo-count">0</span>
+        <span class="photo-stat-label">Photos</span>
+        <br><br>
+        <button class="btn-write" onclick="openPhotoWrite()">Ajouter</button>
+      </div>
+    </div>
+    <div class="photo-filters">
+      <button class="photo-filter active" onclick="filterPhoto('all',this)">Tout</button>
+      <button class="photo-filter" onclick="filterPhoto('architecture',this)">Architecture</button>
+      <button class="photo-filter" onclick="filterPhoto('urban',this)">Urbain</button>
+      <button class="photo-filter" onclick="filterPhoto('detail',this)">Détail</button>
+      <button class="photo-filter" onclick="filterPhoto('portrait',this)">Portrait</button>
+    </div>
+    <div class="photo-grid" id="photo-grid"></div>
+  </div>
+</div>
+
+<!-- A PROPOS -->
+<div id="view-about" class="view">
+  <div class="about-wrap">
+    <p class="about-eyebrow">Anthropotech — À propos</p>
+    <h1 class="about-title">Qui sommes <em>nous ?</em></h1>
+    <div class="about-body">
+      <p>Anthropotech est un espace dédié à l'exploration de l'humain et de la technologie. Ici, vous trouverez des réflexions, des idées et des observations sur la manière dont les comportements et les innovations numériques façonnent notre quotidien.</p>
+      <p>L'objectif : <strong>inspirer, questionner, explorer, comprendre et imaginer.</strong></p>
+    </div>
+    <div class="about-tags">
+      <span class="about-tag">Tesla</span>
+      <span class="about-tag">Apple</span>
+      <span class="about-tag">IA</span>
+      <span class="about-tag">Linux</span>
+      <span class="about-tag">Photo N&amp;B</span>
+      <span class="about-tag">Architecture</span>
+      <span class="about-tag">L'Humain</span>
+      <span class="about-tag">Psychologie</span>
+      <span class="about-tag">Numérique</span>
+    </div>
+    <div class="about-mention">
+      <strong>Mentions légales —</strong> Les opinions exprimées sur ce blog sont personnelles, basées sur l'expérience et l'usage général des produits ou services évoqués. Elles ne visent en aucun cas à porter atteinte à la réputation de leurs fabricants, auteurs ou employés.
+    </div>
+  </div>
+</div>
+
+<footer>
+  <span>Anthropo<em>tech</em></span>
+  <span id="footer-count"></span>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">x</button>
+  <button class="lightbox-nav prev" onclick="lightboxNav(-1)">&#8249;</button>
+  <img id="lb-img" src="" alt="">
+  <div class="lightbox-info">
+    <div class="lightbox-title" id="lb-title"></div>
+    <div class="lightbox-meta" id="lb-meta"></div>
+  </div>
+  <button class="lightbox-nav next" onclick="lightboxNav(1)">&#8250;</button>
+</div>
+
+<!-- MOT DE PASSE -->
+<div class="pwd-overlay" id="pwd-overlay">
+  <div class="pwd-box">
+    <button class="pwd-close" onclick="document.getElementById('pwd-overlay').classList.remove('open')">&#x2715;</button>
+    <div class="pwd-title">Accès<br><em style="color:var(--accent)">rédacteur</em></div>
+    <input type="password" id="pwd-input" placeholder="Mot de passe" onkeydown="if(event.key==='Enter')checkPwd()">
+    <div class="pwd-error" id="pwd-error">Mot de passe incorrect.</div>
+    <button class="btn-publish" style="width:100%" onclick="checkPwd()">Entrer</button>
+  </div>
+</div>
+
+<!-- MODAL ARTICLE -->
+<div class="modal-overlay" id="modal-article">
+  <div class="modal">
+    <button class="modal-close" onclick="closeArticleModal()">x</button>
+    <h2 class="modal-title" id="modal-article-title">Nouvel <em>article</em></h2>
+    <input type="hidden" id="f-edit-idx" value="-1">
+    <div class="field">
+      <label>Rubrique</label>
+      <select id="f-cat">
+        <option value="tech">Tech</option>
+        <option value="tesla">Tesla</option>
+        <option value="ia">IA</option>
+        <option value="apple">Apple</option>
+        <option value="homekit">HomeKit</option>
+        <option value="iphone">iPhone</option>
+        <option value="osx">OSX</option>
+        <option value="linux">Linux</option>
+        <option value="humain">L'Humain</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Titre</label>
+      <input type="text" id="f-title" placeholder="Le titre de votre article">
+    </div>
+    <div class="field">
+      <label>Résumé</label>
+      <input type="text" id="f-excerpt" placeholder="Une phrase d'accroche">
+    </div>
+    <div class="field">
+      <label>Contenu</label>
+      <textarea id="f-body" placeholder="Écrivez votre article ici"></textarea>
+    </div>
+    <div class="field">
+      <label>Auteur</label>
+      <input type="text" id="f-author" placeholder="Votre nom">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeArticleModal()">Annuler</button>
+      <button class="btn-publish" onclick="publishArticle()">Publier</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PHOTO -->
+<div class="modal-overlay" id="modal-photo">
+  <div class="modal">
+    <button class="modal-close" onclick="document.getElementById('modal-photo').classList.remove('open')">x</button>
+    <h2 class="modal-title">Nouvelle <em>photo</em></h2>
+    <div class="field">
+      <label>Photo (JPG, PNG)</label>
+      <div class="upload-zone" onclick="document.getElementById('photo-file').click()">
+        <input type="file" id="photo-file" accept="image/*" onchange="previewPhoto(this)">
+        <p id="upload-hint">Cliquez pour choisir une photo</p>
+        <img class="upload-preview" id="photo-preview">
+      </div>
+    </div>
+    <div class="field">
+      <label>Titre</label>
+      <input type="text" id="p-title" placeholder="Titre de la photo">
+    </div>
+    <div class="field">
+      <label>Catégorie</label>
+      <select id="p-cat">
+        <option value="architecture">Architecture</option>
+        <option value="urban">Urbain</option>
+        <option value="detail">Détail</option>
+        <option value="portrait">Portrait</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Lieu</label>
+      <input type="text" id="p-location" placeholder="Paris, Lyon...">
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="document.getElementById('modal-photo').classList.remove('open')">Annuler</button>
+      <button class="btn-publish" onclick="publishPhoto()">Publier</button>
+    </div>
+  </div>
+</div>
+
+<script>
+
+  // Bloquer clic droit, copier, sélection
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && ['c','C','u','U','a','A','s','S','p','P'].includes(e.key)) {
+      e.preventDefault();
+    }
+  });
+  document.addEventListener('selectstart', function(e) {
+    if (e.target.closest('.article-full-body, .article-card, .about-body')) {
+      e.preventDefault();
+    }
+  });
+
+  // Mobile menu
+  function toggleMobileMenu() {
+    document.querySelector('.nav-menu').classList.toggle('open');
+  }
+  // Mobile : clic sur nav-item pour ouvrir dropdown
+  document.querySelectorAll('.nav-item > a').forEach(a => {
+    a.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        const li = this.parentElement;
+        if (li.querySelector('.nav-dropdown')) {
+          e.stopPropagation();
+          li.classList.toggle('open');
+        }
+      }
+    });
+  });
+  document.querySelectorAll('.nav-sub > a').forEach(a => {
+    a.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        const div = this.parentElement;
+        if (div.querySelector('.nav-sub-dropdown')) {
+          e.stopPropagation();
+          div.classList.toggle('open');
+        }
+      }
+    });
+  });
+  
+  // Partage réseaux sociaux
+  function shareArticle(title, url) {
+    const text = encodeURIComponent(title);
+    const link = encodeURIComponent(url || window.location.href);
+    return {
+      twitter: \`https://twitter.com/intent/tweet?text=\${text}&url=\${link}\`,
+      facebook: \`https://www.facebook.com/sharer/sharer.php?u=\${link}\`,
+      linkedin: \`https://www.linkedin.com/sharing/share-offsite/?url=\${link}\`,
+      whatsapp: \`https://api.whatsapp.com/send?text=\${text}%20\${link}\`
+    };
+  }
+
+  const PWD = 'anthropotech2026';
+let authenticated = false;
+let pendingAction = null;
+let currentFilter = 'all';
+let currentPhotoFilter = 'all';
+let currentArticleIdx = -1;
+let lightboxIndex = 0;
+let lightboxPhotos = [];
+
+const catLabels = {
+  all:'Tous les articles', tech:'Tech', tesla:'Tesla', ia:'IA',
+  apple:'Apple', homekit:'HomeKit', iphone:'iPhone', osx:'OSX',
+  linux:'Linux', os:'OS', humian:'& Hum(iA)n',
+  architecture:'Architecture', urban:'Urbain', detail:'Détail', portrait:'Portrait'
+};
+
+function getArticles() { try { return JSON.parse(localStorage.getItem('at_articles')||'[]'); } catch(e){ return []; } }
+function saveArticles(a) { localStorage.setItem('at_articles', JSON.stringify(a)); }
+function getPhotos() { try { return JSON.parse(localStorage.getItem('at_photos')||'[]'); } catch(e){ return []; } }
+function savePhotos(p) { localStorage.setItem('at_photos', JSON.stringify(p)); }
+
+function showView(v) {
+  document.querySelectorAll('.view').forEach(el => el.classList.remove('active'));
+  document.getElementById('view-'+v).classList.add('active');
+  window.scrollTo(0,0);
+  if (v === 'home') renderArticles(currentFilter);
+  if (v === 'photo') renderPhotos(currentPhotoFilter);
+  updateFooter();
+}
+
+function formatTitle(t) {
+  const w = t.split(' ');
+  if (w.length <= 2) return `<em>${t}</em>`;
+  const h = Math.ceil(w.length/2);
+  return w.slice(0,h).join(' ') + ' <em>' + w.slice(h).join(' ') + '</em>';
+}
+
+function renderArticles(filter) {
+  const grid = document.getElementById('articles-grid');
+  const titleEl = document.getElementById('section-title');
+  const articles = getArticles();
+  const techSubs = ['tech','tesla','os','apple','linux'];
+  const reflexSubs = ['reflexion','photo','humain'];
+
+  let filtered = articles.map((a,i) => ({...a, _idx:i}));
+  if (filter !== 'all') {
+    if (filter === 'tech') filtered = filtered.filter(a => techSubs.includes(a.cat));
+    else if (filter === 'reflexion') filtered = filtered.filter(a => reflexSubs.includes(a.cat));
+    else filtered = filtered.filter(a => a.cat === filter);
+  }
+
+  const label = catLabels[filter] || filter;
+  const words = label.split(' ');
+  const last = words.pop();
+  titleEl.innerHTML = words.join(' ') + (words.length ? ' ' : '') + `<em>${last}</em>`;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `<div class="empty-state"><strong>Aucun article pour l'instant</strong>Cliquez sur Écrire pour publier le premier.</div>`;
+    return;
+  }
+
+  grid.innerHTML = filtered.slice().reverse().map((a, i) => `
+    <div class="article-card" onclick="openArticle(${a._idx})" style="animation-delay:${i*0.05}s">
+      <div class="article-card-actions">
+        <button class="btn-action" onclick="event.stopPropagation();editArticle(${a._idx})">Modifier</button>
+        <button class="btn-action del" onclick="event.stopPropagation();deleteArticle(${a._idx})">Supprimer</button>
+      </div>
+      <div class="article-cat">${catLabels[a.cat]||a.cat}</div>
+      <div class="article-title">${formatTitle(a.title)}</div>
+      <div class="article-excerpt">${a.excerpt||''}</div>
+      <div class="article-meta"><span>${a.author||'Anthropotech'}</span><span>${a.date}</span></div>
+    </div>
+  `).join('');
+}
+
+function filterCat(cat, btn) {
+  currentFilter = cat;
+  document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  showView('home');
+}
+
+function openArticle(idx) {
+  const a = getArticles()[idx];
+  if (!a) return;
+  currentArticleIdx = idx;
+  document.getElementById('av-cat').textContent = catLabels[a.cat]||a.cat;
+  document.getElementById('av-title').innerHTML = formatTitle(a.title);
+  document.getElementById('av-meta').innerHTML = `<span>Par ${a.author||'Anthropotech'}</span><span>${a.date}</span>`;
+  document.getElementById('av-body').textContent = a.body;
+  const pageUrl = window.location.href;
+  const links = shareArticle(a.title, pageUrl);
+  document.getElementById('share-tw').href = links.twitter;
+  document.getElementById('share-fb').href = links.facebook;
+  document.getElementById('share-wa').href = links.whatsapp;
+  showView('article');
+}
+
+function editCurrentArticle() { editArticle(currentArticleIdx); }
+function deleteCurrentArticle() { deleteArticle(currentArticleIdx); showView('home'); }
+
+function editArticle(idx) {
+  requireAuth(() => {
+    const a = getArticles()[idx];
+    if (!a) return;
+    document.getElementById('f-edit-idx').value = idx;
+    document.getElementById('modal-article-title').innerHTML = 'Modifier <em>l\'article</em>';
+    document.getElementById('f-cat').value = a.cat;
+    document.getElementById('f-title').value = a.title;
+    document.getElementById('f-excerpt').value = a.excerpt||'';
+    document.getElementById('f-body').value = a.body;
+    document.getElementById('f-author').value = a.author||'';
+    document.getElementById('modal-article').classList.add('open');
+  });
+}
+
+function deleteArticle(idx) {
+  requireAuth(() => {
+    if (!confirm('Supprimer cet article ?')) return;
+    const articles = getArticles();
+    articles.splice(idx, 1);
+    saveArticles(articles);
+    renderArticles(currentFilter);
+    updateFooter();
+  });
+}
+
+function closeArticleModal() {
+  document.getElementById('modal-article').classList.remove('open');
+  document.getElementById('f-edit-idx').value = '-1';
+  document.getElementById('modal-article-title').innerHTML = 'Nouvel <em>article</em>';
+  ['f-title','f-excerpt','f-body','f-author'].forEach(id => document.getElementById(id).value='');
+}
+
+function publishArticle() {
+  const title = document.getElementById('f-title').value.trim();
+  const body  = document.getElementById('f-body').value.trim();
+  if (!title || !body) { alert('Titre et contenu requis.'); return; }
+
+  const articles = getArticles();
+  const editIdx  = parseInt(document.getElementById('f-edit-idx').value);
+  const article  = {
+    cat: document.getElementById('f-cat').value,
+    title, body,
+    excerpt: document.getElementById('f-excerpt').value.trim(),
+    author:  document.getElementById('f-author').value.trim() || 'Anthropotech',
+    date: editIdx >= 0 ? articles[editIdx].date : new Date().toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'})
+  };
+
+  if (editIdx >= 0) {
+    articles[editIdx] = article;
+  } else {
+    articles.push(article);
+  }
+  saveArticles(articles);
+  closeArticleModal();
+  currentFilter = 'all';
+  showView('home');
+  updateFooter();
+}
+
+// ── PHOTOS ──
+function renderPhotos(filter) {
+  const grid = document.getElementById('photo-grid');
+  let photos = getPhotos();
+  document.getElementById('photo-count').textContent = photos.length;
+  if (filter !== 'all') photos = photos.filter(p => p.cat === filter);
+  lightboxPhotos = photos.slice().reverse();
+
+  if (lightboxPhotos.length === 0) {
+    grid.innerHTML = [0,1,2].map(() => `
+      <div class="photo-placeholder" onclick="openPhotoWrite()">
+        <span style="font-size:1.618rem">+</span>
+        <span>Ajouter une photo</span>
+      </div>`).join('');
+    return;
+  }
+
+  grid.innerHTML = lightboxPhotos.map((p, i) => `
+    <div class="photo-item" onclick="openLightbox(${i})">
+      <img src="${p.src}" alt="${p.title}" loading="lazy">
+      <div class="photo-overlay">
+        <div class="photo-info">
+          <span class="photo-info-title">${p.title}</span>
+          <span class="photo-info-cat">${catLabels[p.cat]||p.cat}${p.location ? ' — '+p.location : ''}</span>
+        </div>
+      </div>
+      <button class="photo-delete" onclick="event.stopPropagation();deletePhoto(${getPhotos().length-1-i})">Supprimer</button>
+    </div>
+  `).join('');
+}
+
+function filterPhoto(f, btn) {
+  currentPhotoFilter = f;
+  document.querySelectorAll('.photo-filter').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  renderPhotos(f);
+}
+
+function deletePhoto(idx) {
+  requireAuth(() => {
+    if (!confirm('Supprimer cette photo ?')) return;
+    const photos = getPhotos();
+    photos.splice(idx, 1);
+    savePhotos(photos);
+    renderPhotos(currentPhotoFilter);
+    updateFooter();
+  });
+}
+
+function openLightbox(idx) {
+  lightboxIndex = idx;
+  const p = lightboxPhotos[idx];
+  document.getElementById('lb-img').src = p.src;
+  document.getElementById('lb-title').textContent = p.title;
+  document.getElementById('lb-meta').textContent = (catLabels[p.cat]||p.cat) + (p.location ? ' — '+p.location : '') + ' — ' + p.date;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() { document.getElementById('lightbox').classList.remove('open'); }
+function lightboxNav(dir) {
+  lightboxIndex = (lightboxIndex + dir + lightboxPhotos.length) % lightboxPhotos.length;
+  openLightbox(lightboxIndex);
+}
+document.getElementById('lightbox').addEventListener('click', e => { if(e.target===document.getElementById('lightbox')) closeLightbox(); });
+
+// ── AUTH ──
+function requireAuth(action) {
+  if (authenticated) { action(); return; }
+  pendingAction = action;
+  document.getElementById('pwd-overlay').classList.add('open');
+  setTimeout(() => document.getElementById('pwd-input').focus(), 100);
+}
+function openWrite()      { requireAuth(() => { document.getElementById('modal-article').classList.add('open'); }); }
+function openPhotoWrite() { requireAuth(() => { document.getElementById('modal-photo').classList.add('open'); }); }
+
+function checkPwd() {
+  if (document.getElementById('pwd-input').value === PWD) {
+    authenticated = true;
+    document.getElementById('pwd-overlay').classList.remove('open');
+    document.getElementById('pwd-input').value = '';
+    document.getElementById('pwd-error').style.display = 'none';
+    if (pendingAction) { pendingAction(); pendingAction = null; }
+  } else {
+    document.getElementById('pwd-error').style.display = 'block';
+    document.getElementById('pwd-input').value = '';
+  }
+}
+
+function previewPhoto(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    const preview = document.getElementById('photo-preview');
+    preview.src = e.target.result;
+    preview.style.display = 'block';
+    document.getElementById('upload-hint').style.display = 'none';
+  };
+  reader.readAsDataURL(file);
+}
+
+function publishPhoto() {
+  const file  = document.getElementById('photo-file').files[0];
+  const title = document.getElementById('p-title').value.trim();
+  if (!file || !title) { alert('Photo et titre requis.'); return; }
+  const reader = new FileReader();
+  reader.onload = e => {
+    const photos = getPhotos();
+    photos.push({
+      src: e.target.result,
+      title,
+      cat:      document.getElementById('p-cat').value,
+      location: document.getElementById('p-location').value.trim(),
+      date:     new Date().toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'})
+    });
+    savePhotos(photos);
+    document.getElementById('modal-photo').classList.remove('open');
+    document.getElementById('photo-file').value = '';
+    document.getElementById('p-title').value = '';
+    document.getElementById('p-location').value = '';
+    document.getElementById('photo-preview').style.display = 'none';
+    document.getElementById('upload-hint').style.display = 'block';
+    renderPhotos(currentPhotoFilter);
+    updateFooter();
+  };
+  reader.readAsDataURL(file);
+}
+
+function updateFooter() {
+  const a = getArticles().length;
+  const p = getPhotos().length;
+  document.getElementById('footer-count').textContent =
+    `${a} article${a>1?'s':''} — ${p} photo${p>1?'s':''}`;
+}
+
+renderArticles('all');
+updateFooter();
+</script>
+</body>
+</html>
