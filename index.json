@@ -1,4 +1,9 @@
 [
+ "nas-wireguard-freebox.json",
+  "choisir-voiture-electrique.json",
+  "claude-code-leviers.json",
+  "anthropic-skilljar.json",
+  "wireguard-nas-freebox.json",
   "voiture-plateforme.json",
   "iphone-infrastructure.json",
   "zenclora-os.json",
