@@ -1509,4 +1509,18 @@ if ('serviceWorker' in navigator) {
   document.body.appendChild(tooltip);
 
   // Afficher après 10 secondes
-  setTimeo
+  setTimeout(() => {
+    tooltip.classList.add('visible');
+    try{localStorage.setItem('pwa-tooltip-seen', '1');}catch(e){}
+
+    // Disparaît automatiquement après 8 secondes
+    setTimeout(() => {
+      tooltip.style.opacity = '0';
+      tooltip.style.transform = 'translateX(-50%) translateY(10px)';
+      setTimeout(() => tooltip.remove(), 400);
+    }, 8000);
+  }, 10000);
+})();
+</script>
+</body>
+</html>
