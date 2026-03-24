@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1200px;
+    height: 630px;
+    overflow: hidden;
+    background: #0f1117;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+
+  .canvas {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  /* Grain texture overlay */
+  .canvas::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.06'/%3E%3C/svg%3E");
+    z-index: 10;
+    pointer-events: none;
+    opacity: .55;
+  }
+
+  /* Radial glow rouge bordeaux */
+  .glow-red {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(181,57,77,.18) 0%, transparent 65%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+  /* Glow bleu subtil coin bas droit */
+  .glow-blue {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(74,96,128,.12) 0%, transparent 65%);
+    bottom: -100px;
+    right: -80px;
+    z-index: 1;
+  }
+
+  /* Lignes de grille horizontales */
+  .grid-lines {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background-image:
+      linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px);
+    background-size: 100% 63px;
+  }
+
+  /* Ligne verticale gauche */
+  .line-left {
+    position: absolute;
+    left: 80px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(181,57,77,.4), transparent);
+    z-index: 3;
+  }
+
+  /* Ligne verticale droite */
+  .line-right {
+    position: absolute;
+    right: 80px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent, rgba(74,96,128,.3), transparent);
+    z-index: 3;
+  }
+
+  /* Ligne horizontale haut */
+  .line-top {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,.06), transparent);
+    z-index: 3;
+  }
+
+  /* Ligne horizontale bas */
+  .line-bottom {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255,255,255,.06), transparent);
+    z-index: 3;
+  }
+
+  /* Contenu central */
+  .center {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  /* Eyebrow */
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: .42em;
+    text-transform: uppercase;
+    color: rgba(181,57,77,.7);
+    font-family: system-ui, sans-serif;
+    font-weight: 400;
+    margin-bottom: 28px;
+  }
+
+  /* Titre principal */
+  .title {
+    font-size: 148px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.02em;
+    color: #e8e4dd;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+  }
+
+  /* La partie {i} */
+  .title-bracket {
+    color: rgba(181,57,77,.35);
+    font-size: 110px;
+    letter-spacing: -.01em;
+  }
+
+  .title-i {
+    color: #b5394d;
+    font-style: italic;
+    font-size: 148px;
+  }
+
+  /* Ligne séparatrice sous le titre */
+  .divider {
+    width: 320px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(181,57,77,.6), transparent);
+    margin: 32px auto 28px;
+  }
+
+  /* Slogan */
+  .slogan {
+    font-size: 15px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: rgba(232,228,221,.35);
+    font-family: system-ui, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  /* URL bas gauche */
+  .url {
+    position: absolute;
+    bottom: 42px;
+    left: 108px;
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: rgba(232,228,221,.2);
+    font-family: system-ui, sans-serif;
+    z-index: 5;
+  }
+
+  /* Numéro articles bas droit */
+  .count {
+    position: absolute;
+    bottom: 42px;
+    right: 108px;
+    font-size: 11px;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: rgba(232,228,221,.2);
+    font-family: system-ui, sans-serif;
+    z-index: 5;
+    text-align: right;
+  }
+  .count em {
+    color: rgba(181,57,77,.5);
+    font-style: normal;
+    font-family: Georgia, serif;
+    font-size: 14px;
+  }
+
+  /* Petit ornement coin haut gauche */
+  .corner-tl {
+    position: absolute;
+    top: 42px;
+    left: 108px;
+    font-size: 10px;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: rgba(232,228,221,.15);
+    font-family: system-ui, sans-serif;
+    z-index: 5;
+  }
+
+  /* Ornement coin haut droit */
+  .corner-tr {
+    position: absolute;
+    top: 42px;
+    right: 108px;
+    width: 28px;
+    height: 28px;
+    border-top: 1px solid rgba(181,57,77,.3);
+    border-right: 1px solid rgba(181,57,77,.3);
+    z-index: 5;
+  }
+
+  /* Ornement coin bas gauche */
+  .corner-bl {
+    position: absolute;
+    bottom: 34px;
+    left: 94px;
+    width: 28px;
+    height: 28px;
+    border-bottom: 1px solid rgba(74,96,128,.3);
+    border-left: 1px solid rgba(74,96,128,.3);
+    z-index: 5;
+  }
+
+</style>
+</head>
+<body>
+<div class="canvas">
+
+  <!-- Ambiance -->
+  <div class="glow-red"></div>
+  <div class="glow-blue"></div>
+  <div class="grid-lines"></div>
+  <div class="line-left"></div>
+  <div class="line-right"></div>
+  <div class="line-top"></div>
+  <div class="line-bottom"></div>
+
+  <!-- Ornements coins -->
+  <div class="corner-tl">Anthropotech · Magazine</div>
+  <div class="corner-tr"></div>
+  <div class="corner-bl"></div>
+
+  <!-- Contenu -->
+  <div class="center">
+    <div class="eyebrow">Magazine numérique</div>
+    <div class="title">
+      <span>Hum</span><span class="title-bracket">{</span><span class="title-i">i</span><span class="title-bracket">}</span><span>An</span>
+    </div>
+    <div class="divider"></div>
+    <div class="slogan">Explorer · Comprendre · Questionner</div>
+  </div>
+
+  <!-- Bas de page -->
+  <div class="url">shamsetdean.github.io/Anthropotech</div>
+  <div class="count"><em>36</em> articles</div>
+
+</div>
+</body>
+</html>
