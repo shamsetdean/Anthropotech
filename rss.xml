@@ -5,7 +5,7 @@
     <link>https://shamsetdean.github.io/Anthropotech/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 25 Mar 2026 22:51:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 22:52:29 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/Anthropotech/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams & Dean</managingEditor>
@@ -83,15 +83,6 @@
       <author>Shams &amp; Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/wordpress-playground</guid>
-    </item>
-    <item>
-      <title>La DGFiP plaque Microsoft : Linux sur 95 000 postes</title>
-      <link>https://shamsetdean.github.io/Anthropotech/article/dgfip-linux</link>
-      <description>La DGFiP abandonne Windows pour Linux sur tous ses postes. Une claque magistrale aux géants de Redmond, et ça tombe à pic.</description>
-      <pubDate>Sat, 21 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>OS</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/dgfip-linux</guid>
     </item>
     <item>
       <title>Les 11 commandements de l'entretien</title>
@@ -191,6 +182,15 @@
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/evolution-humaine-ia</guid>
+    </item>
+    <item>
+      <title>L'authenticite face a nos contradictions : le vrai defi</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/authenticite-contradictions</link>
+      <description>Nous valorisons la transparence, l'ouverture, le changement. Pourtant, au premier inconfort, nous nous crispons. Ce decalage a un nom : la dissonance cognitive.</description>
+      <pubDate>Tue, 10 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/authenticite-contradictions</guid>
     </item>
   </channel>
 </rss>
