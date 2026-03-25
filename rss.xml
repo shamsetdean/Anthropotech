@@ -1,196 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>Anthropotech · Lab</title>
     <link>https://shamsetdean.github.io/Anthropotech/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 25 Mar 2026 05:38:44 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 13:52:05 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/Anthropotech/rss.xml" rel="self" type="application/rss+xml"/>
-    <image>
-      <url>https://shamsetdean.github.io/Anthropotech/icons/icon-192.png</url>
-      <title>Anthropotech · Lab</title>
-      <link>https://shamsetdean.github.io/Anthropotech/</link>
-    </image>
+    <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
+    <managingEditor>Shams & Dean</managingEditor>
+    <category>Technologie</category>
+    <category>Numérique</category>
+    <ttl>1440</ttl>
     <item>
       <title>2026 : les IA prédisent un futur dominé par l'intelligence artificielle. Vision réaliste ou exagérée ?</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=ia-futur-2026-prediction</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/ia-futur-2026-prediction</link>
       <description>ChatGPT, Gemini, Claude : on les a interrogées sur 2026. Agents autonomes, surveillance généralisée, emplois supprimés. Ces visions impressionnent. Mais sont-elles inéluctables ?</description>
       <pubDate>Fri, 01 Jan 2027 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>humian</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=ia-futur-2026-prediction</guid>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/ia-futur-2026-prediction</guid>
     </item>
     <item>
       <title>Google lance Gemini sur Mac : la contre-attaque tant attendue</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=gemini-mac-contre-attaque</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/gemini-mac-contre-attaque</link>
       <description>Depuis le 19 mars 2026, une bêta privée de Gemini circule sur Mac. ChatGPT et Claude déjà natifs, Siri en retard. Apple emprunte l'IA de Google. La guerre des IA sur Mac est ouverte.</description>
       <pubDate>Fri, 27 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>apple</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=gemini-mac-contre-attaque</guid>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/gemini-mac-contre-attaque</guid>
     </item>
     <item>
       <title>L'IA pour PME : réfléchissez avant de cliquer</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=ia-pme-avant-cliquer</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/ia-pme-avant-cliquer</link>
       <description>Sans cap précis, l'IA draine trésorerie et énergie. Mesurez vos victoires ou passez votre tour. Ce que David Gewirtz applique chez lui : cumul de microgains, zéro illusion.</description>
       <pubDate>Thu, 26 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>humian</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=ia-pme-avant-cliquer</guid>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/ia-pme-avant-cliquer</guid>
     </item>
     <item>
       <title>Adobe Firefly Custom : ton style, ton IA, mais à qui appartient le résultat ?</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=adobe-firefly-custom-identite</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/adobe-firefly-custom-identite</link>
       <description>Adobe permet d'entraîner une IA sur tes propres créations. Gain de productivité évident. Mais quand la génération devient plus rapide que le raisonnement, à qui appartient vraiment le résultat ?</description>
       <pubDate>Wed, 25 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>humian</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=adobe-firefly-custom-identite</guid>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/adobe-firefly-custom-identite</guid>
     </item>
     <item>
       <title>Windows, macOS, Linux — Trois visions du même métier</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=windows-macos-linux</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/windows-macos-linux</link>
       <description>Choisir un système d'exploitation revient à trancher entre trois philosophies de travail. Windows impose sa polyvalence universelle. macOS mise sur une cohérence absolue. Linux offre une liberté totale, quitte à exiger de la patience.</description>
       <pubDate>Wed, 25 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=windows-macos-linux</guid>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/windows-macos-linux</guid>
     </item>
     <item>
       <title>Firefox 2026 : reprendre le contrôle du web</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=firefox-2026-controle-web</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/firefox-2026-controle-web</link>
       <description>Firefox défend une idée simple : laisser l'utilisateur décider. VPN intégré gratuit, Smart Window, API Sanitizer, vue fractionnée. En 2026, reprendre le contrôle de sa navigation n'est pas un luxe.</description>
       <pubDate>Tue, 24 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=firefox-2026-controle-web</guid>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/firefox-2026-controle-web</guid>
     </item>
     <item>
       <title>Et si les applications disparaissaient ?</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=apps-disparaissent-carl-pei</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/apps-disparaissent-carl-pei</link>
       <description>Pour Carl Pei, fondateur de Nothing, le smartphone de demain n'aura plus besoin d'icônes ni d'App Store. Une vision audacieuse qui séduit autant qu'elle interroge.</description>
       <pubDate>Mon, 23 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>apple</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=apps-disparaissent-carl-pei</guid>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/apps-disparaissent-carl-pei</guid>
     </item>
     <item>
       <title>WordPress libère le développement local</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=wordpress-playground</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/wordpress-playground</link>
       <description>my.wordpress.net ouvre un WordPress complet dans le navigateur, sans installation. Lancé le 10 mars 2026, il repose sur WebAssembly. Idéal pour prototyper, pas pour déployer.</description>
       <pubDate>Sun, 22 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=wordpress-playground</guid>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/wordpress-playground</guid>
     </item>
     <item>
       <title>La DGFiP plaque Microsoft : Linux sur 95 000 postes</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=dgfip-linux</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/dgfip-linux</link>
       <description>La DGFiP abandonne Windows pour Linux sur tous ses postes. Une claque magistrale aux géants de Redmond, et ça tombe à pic.</description>
       <pubDate>Sat, 21 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>linux</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=dgfip-linux</guid>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/dgfip-linux</guid>
+    </item>
+    <item>
+      <title>Les 11 commandements de l'entretien</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/11-commandements-entretien</link>
+      <description>Un entretien d'embauche n'est pas un examen. C'est une rencontre entre deux personnes qui vérifient si elles peuvent avancer ensemble. Onze conseils concrets pour arrêter de vous saboter.</description>
+      <pubDate>Fri, 20 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/11-commandements-entretien</guid>
     </item>
     <item>
       <title>OBS : le couteau suisse de la diffusion en direct</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=obs-streaming</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/obs-streaming</link>
       <description>Gratuit, puissant, open-source. OBS est le logiciel qui transforme votre PC en regie televisuelle , que vous streamiez un conseil municipal ou une partie de jeu video.</description>
       <pubDate>Fri, 20 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=obs-streaming</guid>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/obs-streaming</guid>
     </item>
     <item>
       <title>Intelligence artificielle et données personnelles : avons-nous vraiment consenti ?</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=ia-donnees-consentement</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/ia-donnees-consentement</link>
       <description>L'IA ne fonctionne pas a l'electricite seule. Son carburant, ce sont nos données. Mais avons-nous reellement choisi de participer a ce système ?</description>
       <pubDate>Thu, 19 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>humian</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=ia-donnees-consentement</guid>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/ia-donnees-consentement</guid>
     </item>
     <item>
       <title>ChatGPT et Service Public : ne pas subir, mais maitriser</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=chatgpt-service-public</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/chatgpt-service-public</link>
       <description>L'arrivee de ChatGPT dans les collectivites n'est pas un simple outil en plus. C'est un changement de culture. La vraie question n'est pas : faut-il l'utiliser ? Mais comment l'utiliser intelligemment.</description>
       <pubDate>Wed, 18 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>humian</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=chatgpt-service-public</guid>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/chatgpt-service-public</guid>
     </item>
     <item>
       <title>La malhonnetete intellectuelle : quand le raccourci devient manipulation</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=malhonnetete-intellectuelle</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/malhonnetete-intellectuelle</link>
       <description>Dans nos sociétés saturees d'informations, certains preferent les raccourcis cognitifs a la rigueur. Ce n'est pas qu'un problème de moralite. C'est un rapport complexe au pouvoir.</description>
       <pubDate>Tue, 17 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>humian</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=malhonnetete-intellectuelle</guid>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/malhonnetete-intellectuelle</guid>
     </item>
     <item>
       <title>Anthropic Skilljar : la plateforme gratuite pour maîtriser Claude AI</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=anthropic-skilljar-formation</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/anthropic-skilljar-formation</link>
       <description>Anthropic lance Skilljar, une plateforme d'apprentissage gratuite avec cours interactifs et certificats officiels pour maîtriser Claude AI, ses APIs et le protocole MCP.</description>
       <pubDate>Mon, 16 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams&amp;Dean</author>
-      <category>tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=anthropic-skilljar-formation</guid>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/anthropic-skilljar-formation</guid>
     </item>
     <item>
       <title>Claude Code : les leviers essentiels pour coder en 2026</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=claude-code-leviers-2026</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/claude-code-leviers-2026</link>
       <description>Claude Code dépasse la génération de texte grâce à des outils dédiés : autorisations MCP, modes Plan et Thinking, fichiers Claude.md hiérarchiques et crochets de protection.</description>
       <pubDate>Sun, 15 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams&amp;Dean</author>
-      <category>tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=claude-code-leviers-2026</guid>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/claude-code-leviers-2026</guid>
     </item>
     <item>
       <title>Mon setup domotique HomeKit : points forts et points à améliorer</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=homekit-experience</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/homekit-experience</link>
       <description>Un an de HomeKit complet : IKEA, Meross, Eve, Elgato, Matter. Le confort est réel, la facture lumière en baisse. Mais Siri reste capricieux et la simulation de présence ne trompe personne.</description>
       <pubDate>Sat, 14 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>apple</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=homekit-experience</guid>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/homekit-experience</guid>
     </item>
     <item>
       <title>Sécuriser son NAS à la maison : la méthode WireGuard sur Freebox Pop</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=nas-wireguard-freebox</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/nas-wireguard-freebox</link>
       <description>Laisser son NAS ouvert sur Internet, c'est jouer avec le feu. WireGuard sur Freebox Pop offre une alternative simple, rapide et totalement sous ton contrôle.</description>
       <pubDate>Fri, 13 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams&amp;Dean</author>
-      <category>tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=nas-wireguard-freebox</guid>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/nas-wireguard-freebox</guid>
     </item>
     <item>
       <title>Choisir sa voiture électrique : arrêter de chercher le "meilleur modèle", commencer par se comprendre soi</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=voiture-electrique-usage</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/voiture-electrique-usage</link>
       <description>La vraie question n'est pas quelle est la meilleure voiture, mais pour quel conducteur. Le quotidien dicte le bon choix, pas le marché.</description>
       <pubDate>Thu, 12 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams&amp;Dean</author>
-      <category>tesla</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=voiture-electrique-usage</guid>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/voiture-electrique-usage</guid>
     </item>
     <item>
       <title>Des chasseurs primitifs a l'IA : nos outils ont toujours transforme notre facon de penser</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=evolution-humaine-ia</link>
+      <link>https://shamsetdean.github.io/Anthropotech/article/evolution-humaine-ia</link>
       <description>Du silex a l'algorithme, la logique est la même : nos outils etendent nos capacités. Mais ils redefinissent aussi nos hierarchies, nos comportements, notre facon d'être au monde.</description>
       <pubDate>Wed, 11 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
-      <category>humian</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=evolution-humaine-ia</guid>
-    </item>
-    <item>
-      <title>L'authenticite face a nos contradictions : le vrai defi</title>
-      <link>https://shamsetdean.github.io/Anthropotech/?article=authenticite-contradictions</link>
-      <description>Nous valorisons la transparence, l'ouverture, le changement. Pourtant, au premier inconfort, nous nous crispons. Ce decalage a un nom : la dissonance cognitive.</description>
-      <pubDate>Tue, 10 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>humian</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/?article=authenticite-contradictions</guid>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/evolution-humaine-ia</guid>
     </item>
   </channel>
 </rss>

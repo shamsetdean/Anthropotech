@@ -72,6 +72,14 @@
     "auteur": "Shams & Dean"
   },
   {
+    "id": "11-commandements-entretien",
+    "titre": "Les 11 commandements de l'entretien",
+    "resume": "Un entretien d'embauche n'est pas un examen. C'est une rencontre entre deux personnes qui vérifient si elles peuvent avancer ensemble. Onze conseils concrets pour arrêter de vous saboter.",
+    "categorie": "humian",
+    "date": "20 mars 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "obs-streaming",
     "titre": "OBS : le couteau suisse de la diffusion en direct",
     "resume": "Gratuit, puissant, open-source. OBS est le logiciel qui transforme votre PC en regie televisuelle , que vous streamiez un conseil municipal ou une partie de jeu video.",
