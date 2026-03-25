@@ -5,7 +5,7 @@
     <link>https://shamsetdean.github.io/Anthropotech/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 25 Mar 2026 22:53:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 22:53:22 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/Anthropotech/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams & Dean</managingEditor>
@@ -29,15 +29,6 @@
       <author>Shams &amp; Dean</author>
       <category>OS</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/gemini-mac-contre-attaque</guid>
-    </item>
-    <item>
-      <title>L'IA pour PME : réfléchissez avant de cliquer</title>
-      <link>https://shamsetdean.github.io/Anthropotech/article/ia-pme-avant-cliquer</link>
-      <description>Sans cap précis, l'IA draine trésorerie et énergie. Mesurez vos victoires ou passez votre tour. Ce que David Gewirtz applique chez lui : cumul de microgains, zéro illusion.</description>
-      <pubDate>Thu, 26 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Hum{i}An</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/ia-pme-avant-cliquer</guid>
     </item>
     <item>
       <title>Le procès des écrans : Meta confronté à ses plateformes</title>
@@ -191,6 +182,15 @@
       <author>Shams &amp; Dean</author>
       <category>OS</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/zenclora-os</guid>
+    </item>
+    <item>
+      <title>Les 10 astuces Windows 11 que les professionnels ignorent</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/windows-11-astuces</link>
+      <description>Testées sur Windows 24H2 en mars 2026. Title Bar Shake, Copilot Vision, compression 7z, Phone Link Webcam : 10 fonctions qui boostent la productivité et que la plupart ignorent.</description>
+      <pubDate>Sat, 07 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/windows-11-astuces</guid>
     </item>
   </channel>
 </rss>
