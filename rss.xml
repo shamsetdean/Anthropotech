@@ -5,7 +5,7 @@
     <link>https://shamsetdean.github.io/Anthropotech/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 25 Mar 2026 22:52:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 22:52:48 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/Anthropotech/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams & Dean</managingEditor>
@@ -112,15 +112,6 @@
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/ia-donnees-consentement</guid>
     </item>
     <item>
-      <title>ChatGPT et Service Public : ne pas subir, mais maitriser</title>
-      <link>https://shamsetdean.github.io/Anthropotech/article/chatgpt-service-public</link>
-      <description>L'arrivee de ChatGPT dans les collectivites n'est pas un simple outil en plus. C'est un changement de culture. La vraie question n'est pas : faut-il l'utiliser ? Mais comment l'utiliser intelligemment.</description>
-      <pubDate>Wed, 18 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Hum{i}An</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/chatgpt-service-public</guid>
-    </item>
-    <item>
       <title>La malhonnetete intellectuelle : quand le raccourci devient manipulation</title>
       <link>https://shamsetdean.github.io/Anthropotech/article/malhonnetete-intellectuelle</link>
       <description>Dans nos sociétés saturees d'informations, certains preferent les raccourcis cognitifs a la rigueur. Ce n'est pas qu'un problème de moralite. C'est un rapport complexe au pouvoir.</description>
@@ -191,6 +182,15 @@
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/authenticite-contradictions</guid>
+    </item>
+    <item>
+      <title>Pourquoi avons-nous autant de mal a admettre que nous ne savons pas ?</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/admettre-ne-pas-savoir</link>
+      <description>Avoir raison, c'est confortable. Mais derriere cette quete de vérité se cache souvent autre chose : le besoin d'avoir le dernier mot.</description>
+      <pubDate>Mon, 09 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/admettre-ne-pas-savoir</guid>
     </item>
   </channel>
 </rss>
