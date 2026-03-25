@@ -16,11 +16,27 @@
     "auteur": "Shams & Dean"
   },
   {
+    "id": "ia-pme-avant-cliquer",
+    "titre": "L'IA pour PME : réfléchissez avant de cliquer",
+    "resume": "Sans cap précis, l'IA draine trésorerie et énergie. Mesurez vos victoires ou passez votre tour. Cumul de microgains, zéro illusion.",
+    "categorie": "humian",
+    "date": "26 mars 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "proces-ecrans-algorithmes",
     "titre": "Le procès des écrans : Meta confronté à ses plateformes",
     "resume": "Le 25 mars 2026, un tribunal du Nouveau-Mexique a condamné Meta à 375 millions de dollars pour mise en danger de mineurs. Une décision historique qui interroge la conception des plateformes — et la responsabilité des foyers.",
     "categorie": "humian",
     "date": "26 mars 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
+    "id": "adobe-firefly-custom-identite",
+    "titre": "Adobe Firefly Custom : ton style, ton IA, mais à qui appartient le résultat ?",
+    "resume": "Adobe permet d'entraîner une IA sur tes propres créations. Gain de productivité évident. Mais quand la génération devient plus rapide que le raisonnement, à qui appartient vraiment le résultat ?",
+    "categorie": "humian",
+    "date": "25 mars 2026",
     "auteur": "Shams & Dean"
   },
   {
@@ -40,11 +56,27 @@
     "auteur": "Shams & Dean"
   },
   {
+    "id": "apps-disparaissent-carl-pei",
+    "titre": "Et si les applications disparaissaient ?",
+    "resume": "Pour Carl Pei, fondateur de Nothing, le smartphone de demain n'aura plus besoin d'icônes ni d'App Store. Une vision audacieuse qui séduit autant qu'elle interroge.",
+    "categorie": "apple",
+    "date": "23 mars 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "wordpress-playground",
     "titre": "WordPress libère le développement local",
     "resume": "my.wordpress.net ouvre un WordPress complet dans le navigateur, sans installation. Lancé le 10 mars 2026, il repose sur WebAssembly. Idéal pour prototyper, pas pour déployer.",
     "categorie": "tech",
     "date": "22 mars 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
+    "id": "dgfip-linux",
+    "titre": "La DGFiP plaque Microsoft : Linux sur 95 000 postes",
+    "resume": "La DGFiP abandonne Windows pour Linux sur tous ses postes. Une claque magistrale aux géants de Redmond, et ça tombe à pic.",
+    "categorie": "linux",
+    "date": "21 mars 2026",
     "auteur": "Shams & Dean"
   },
   {
@@ -69,6 +101,14 @@
     "resume": "L'IA ne fonctionne pas a l'electricite seule. Son carburant, ce sont nos données. Mais avons-nous reellement choisi de participer a ce système ?",
     "categorie": "humian",
     "date": "19 mars 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
+    "id": "chatgpt-service-public",
+    "titre": "ChatGPT et Service Public : ne pas subir, mais maitriser",
+    "resume": "L'arrivee de ChatGPT dans les collectivites n'est pas un simple outil en plus. C'est un changement de culture. La vraie question n'est pas : faut-il l'utiliser ? Mais comment l'utiliser intelligemment.",
+    "categorie": "humian",
+    "date": "18 mars 2026",
     "auteur": "Shams & Dean"
   },
   {

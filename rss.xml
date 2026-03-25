@@ -5,7 +5,7 @@
     <link>https://shamsetdean.github.io/Anthropotech/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 25 Mar 2026 22:53:22 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2026 22:53:52 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/Anthropotech/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams & Dean</managingEditor>
@@ -31,6 +31,15 @@
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/gemini-mac-contre-attaque</guid>
     </item>
     <item>
+      <title>L'IA pour PME : réfléchissez avant de cliquer</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/ia-pme-avant-cliquer</link>
+      <description>Sans cap précis, l'IA draine trésorerie et énergie. Mesurez vos victoires ou passez votre tour. Cumul de microgains, zéro illusion.</description>
+      <pubDate>Thu, 26 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/ia-pme-avant-cliquer</guid>
+    </item>
+    <item>
       <title>Le procès des écrans : Meta confronté à ses plateformes</title>
       <link>https://shamsetdean.github.io/Anthropotech/article/proces-ecrans-algorithmes</link>
       <description>Le 25 mars 2026, un tribunal du Nouveau-Mexique a condamné Meta à 375 millions de dollars pour mise en danger de mineurs. Une décision historique qui interroge la conception des plateformes — et la responsabilité des foyers.</description>
@@ -38,6 +47,15 @@
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/proces-ecrans-algorithmes</guid>
+    </item>
+    <item>
+      <title>Adobe Firefly Custom : ton style, ton IA, mais à qui appartient le résultat ?</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/adobe-firefly-custom-identite</link>
+      <description>Adobe permet d'entraîner une IA sur tes propres créations. Gain de productivité évident. Mais quand la génération devient plus rapide que le raisonnement, à qui appartient vraiment le résultat ?</description>
+      <pubDate>Wed, 25 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/adobe-firefly-custom-identite</guid>
     </item>
     <item>
       <title>Windows, macOS, Linux — Trois visions du même métier</title>
@@ -58,6 +76,15 @@
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/firefox-2026-controle-web</guid>
     </item>
     <item>
+      <title>Et si les applications disparaissaient ?</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/apps-disparaissent-carl-pei</link>
+      <description>Pour Carl Pei, fondateur de Nothing, le smartphone de demain n'aura plus besoin d'icônes ni d'App Store. Une vision audacieuse qui séduit autant qu'elle interroge.</description>
+      <pubDate>Mon, 23 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/apps-disparaissent-carl-pei</guid>
+    </item>
+    <item>
       <title>WordPress libère le développement local</title>
       <link>https://shamsetdean.github.io/Anthropotech/article/wordpress-playground</link>
       <description>my.wordpress.net ouvre un WordPress complet dans le navigateur, sans installation. Lancé le 10 mars 2026, il repose sur WebAssembly. Idéal pour prototyper, pas pour déployer.</description>
@@ -65,6 +92,15 @@
       <author>Shams &amp; Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/wordpress-playground</guid>
+    </item>
+    <item>
+      <title>La DGFiP plaque Microsoft : Linux sur 95 000 postes</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/dgfip-linux</link>
+      <description>La DGFiP abandonne Windows pour Linux sur tous ses postes. Une claque magistrale aux géants de Redmond, et ça tombe à pic.</description>
+      <pubDate>Sat, 21 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/dgfip-linux</guid>
     </item>
     <item>
       <title>Les 11 commandements de l'entretien</title>
@@ -92,6 +128,15 @@
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/ia-donnees-consentement</guid>
+    </item>
+    <item>
+      <title>ChatGPT et Service Public : ne pas subir, mais maitriser</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/chatgpt-service-public</link>
+      <description>L'arrivee de ChatGPT dans les collectivites n'est pas un simple outil en plus. C'est un changement de culture. La vraie question n'est pas : faut-il l'utiliser ? Mais comment l'utiliser intelligemment.</description>
+      <pubDate>Wed, 18 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/chatgpt-service-public</guid>
     </item>
     <item>
       <title>La malhonnetete intellectuelle : quand le raccourci devient manipulation</title>
@@ -146,51 +191,6 @@
       <author>Shams&amp;Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/voiture-electrique-usage</guid>
-    </item>
-    <item>
-      <title>Des chasseurs primitifs a l'IA : nos outils ont toujours transforme notre facon de penser</title>
-      <link>https://shamsetdean.github.io/Anthropotech/article/evolution-humaine-ia</link>
-      <description>Du silex a l'algorithme, la logique est la même : nos outils etendent nos capacités. Mais ils redefinissent aussi nos hierarchies, nos comportements, notre facon d'être au monde.</description>
-      <pubDate>Wed, 11 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Hum{i}An</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/evolution-humaine-ia</guid>
-    </item>
-    <item>
-      <title>L'authenticite face a nos contradictions : le vrai defi</title>
-      <link>https://shamsetdean.github.io/Anthropotech/article/authenticite-contradictions</link>
-      <description>Nous valorisons la transparence, l'ouverture, le changement. Pourtant, au premier inconfort, nous nous crispons. Ce decalage a un nom : la dissonance cognitive.</description>
-      <pubDate>Tue, 10 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Hum{i}An</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/authenticite-contradictions</guid>
-    </item>
-    <item>
-      <title>Pourquoi avons-nous autant de mal a admettre que nous ne savons pas ?</title>
-      <link>https://shamsetdean.github.io/Anthropotech/article/admettre-ne-pas-savoir</link>
-      <description>Avoir raison, c'est confortable. Mais derriere cette quete de vérité se cache souvent autre chose : le besoin d'avoir le dernier mot.</description>
-      <pubDate>Mon, 09 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Hum{i}An</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/admettre-ne-pas-savoir</guid>
-    </item>
-    <item>
-      <title>Zenclora OS : la petite distro qui refuse de rester sur le banc</title>
-      <link>https://shamsetdean.github.io/Anthropotech/article/zenclora-os</link>
-      <description>Une Debian prête à l'emploi, un gestionnaire de paquets simplifié, et une question que la communauté Linux n'aime pas entendre.</description>
-      <pubDate>Sun, 08 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>OS</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/zenclora-os</guid>
-    </item>
-    <item>
-      <title>Les 10 astuces Windows 11 que les professionnels ignorent</title>
-      <link>https://shamsetdean.github.io/Anthropotech/article/windows-11-astuces</link>
-      <description>Testées sur Windows 24H2 en mars 2026. Title Bar Shake, Copilot Vision, compression 7z, Phone Link Webcam : 10 fonctions qui boostent la productivité et que la plupart ignorent.</description>
-      <pubDate>Sat, 07 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/windows-11-astuces</guid>
     </item>
   </channel>
 </rss>
