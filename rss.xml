@@ -5,7 +5,7 @@
     <link>https://shamsetdean.github.io/Anthropotech/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 25 Mar 2026 22:53:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 06:13:41 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/Anthropotech/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams & Dean</managingEditor>
@@ -20,6 +20,15 @@
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/ia-futur-2026-prediction</guid>
+    </item>
+    <item>
+      <title>Gérer son image sur les réseaux sociaux : mon atelier de 2016 reste d'actualité en 2026</title>
+      <link>https://shamsetdean.github.io/Anthropotech/article/image-reseaux-sociaux-2016-2026</link>
+      <description>En 2016, j'animais un atelier sur l'image numérique. Les recruteurs scrutaient déjà Facebook. Dix ans plus tard, Meta est condamné à des milliards. Ce que je pressentais alors tombe désormais sous le sens.</description>
+      <pubDate>Sat, 28 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/image-reseaux-sociaux-2016-2026</guid>
     </item>
     <item>
       <title>Google lance Gemini sur Mac : la contre-attaque tant attendue</title>
@@ -182,15 +191,6 @@
       <author>Shams&amp;Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/nas-wireguard-freebox</guid>
-    </item>
-    <item>
-      <title>Choisir sa voiture électrique : arrêter de chercher le "meilleur modèle", commencer par se comprendre soi</title>
-      <link>https://shamsetdean.github.io/Anthropotech/article/voiture-electrique-usage</link>
-      <description>La vraie question n'est pas quelle est la meilleure voiture, mais pour quel conducteur. Le quotidien dicte le bon choix, pas le marché.</description>
-      <pubDate>Thu, 12 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams&amp;Dean</author>
-      <category>Tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/Anthropotech/article/voiture-electrique-usage</guid>
     </item>
   </channel>
 </rss>
