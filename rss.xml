@@ -5,7 +5,7 @@
     <link>https://shamsetdean.github.io/humiAn/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 02 Apr 2026 08:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 09:36:44 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams &amp; Dean</managingEditor>
@@ -112,7 +112,7 @@
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=wordpress-playground</guid>
     </item>
     <item>
-      <title>La DGFiP plaque Microsoft : Linux sur 95 000 postes</title>
+      <title>La DGFiP plaque Microsoft : Linux sur 95 000 postes</title>
       <link>https://shamsetdean.github.io/humiAn/?article=dgfip-linux</link>
       <description>La DGFiP abandonne Windows pour Linux sur tous ses postes. Une claque magistrale aux géants de Redmond, et ça tombe à pic.</description>
       <pubDate>Sat, 21 Mar 2026 08:00:00 +0000</pubDate>
@@ -130,56 +130,56 @@
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=11-commandements-entretien</guid>
     </item>
     <item>
-      <title>OBS : le couteau suisse de la diffusion en direct</title>
+      <title>OBS : le couteau suisse de la diffusion en direct</title>
       <link>https://shamsetdean.github.io/humiAn/?article=obs-streaming</link>
-      <description>Gratuit, puissant, open-source. OBS est le logiciel qui transforme votre PC en régie télévisuelle, que vous streamiez un conseil municipal ou une partie de jeu vidéo.</description>
+      <description>Gratuit, puissant, open-source. OBS est le logiciel qui transforme votre PC en regie televisuelle , que vous streamiez un conseil municipal ou une partie de jeu video.</description>
       <pubDate>Fri, 20 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=obs-streaming</guid>
     </item>
     <item>
-      <title>Intelligence artificielle et données personnelles : avons-nous vraiment consenti ?</title>
+      <title>Intelligence artificielle et données personnelles : avons-nous vraiment consenti ?</title>
       <link>https://shamsetdean.github.io/humiAn/?article=ia-donnees-consentement</link>
-      <description>L'IA ne fonctionne pas à l'électricité seule. Son carburant, ce sont nos données. Mais avons-nous réellement choisi de participer à ce système ?</description>
+      <description>L'IA ne fonctionne pas a l'electricite seule. Son carburant, ce sont nos données. Mais avons-nous reellement choisi de participer a ce système ?</description>
       <pubDate>Thu, 19 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=ia-donnees-consentement</guid>
     </item>
     <item>
-      <title>ChatGPT et Service Public : ne pas subir, mais maîtriser</title>
+      <title>ChatGPT et Service Public : ne pas subir, mais maitriser</title>
       <link>https://shamsetdean.github.io/humiAn/?article=chatgpt-service-public</link>
-      <description>L'arrivée de ChatGPT dans les collectivités n'est pas un simple outil en plus. C'est un changement de culture. La vraie question n'est pas : faut-il l'utiliser ? Mais comment l'utiliser intelligemment.</description>
+      <description>L'arrivee de ChatGPT dans les collectivites n'est pas un simple outil en plus. C'est un changement de culture. La vraie question n'est pas : faut-il l'utiliser ? Mais comment l'utiliser intelligemment.</description>
       <pubDate>Wed, 18 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=chatgpt-service-public</guid>
     </item>
     <item>
-      <title>La malhonnêteté intellectuelle : quand le raccourci devient manipulation</title>
+      <title>La malhonnetete intellectuelle : quand le raccourci devient manipulation</title>
       <link>https://shamsetdean.github.io/humiAn/?article=malhonnetete-intellectuelle</link>
-      <description>Dans nos sociétés saturées d'informations, certains préfèrent les raccourcis cognitifs à la rigueur. Ce n'est pas qu'un problème de moralité. C'est un rapport complexe au pouvoir.</description>
+      <description>Dans nos sociétés saturees d'informations, certains preferent les raccourcis cognitifs a la rigueur. Ce n'est pas qu'un problème de moralite. C'est un rapport complexe au pouvoir.</description>
       <pubDate>Tue, 17 Mar 2026 08:00:00 +0000</pubDate>
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=malhonnetete-intellectuelle</guid>
     </item>
     <item>
-      <title>Anthropic Skilljar : la plateforme gratuite pour maîtriser Claude AI</title>
+      <title>Anthropic Skilljar : la plateforme gratuite pour maîtriser Claude AI</title>
       <link>https://shamsetdean.github.io/humiAn/?article=anthropic-skilljar-formation</link>
       <description>Anthropic lance Skilljar, une plateforme d'apprentissage gratuite avec cours interactifs et certificats officiels pour maîtriser Claude AI, ses APIs et le protocole MCP.</description>
       <pubDate>Mon, 16 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
+      <author>Shams&amp;Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=anthropic-skilljar-formation</guid>
     </item>
     <item>
-      <title>Claude Code : les leviers essentiels pour coder en 2026</title>
+      <title>Claude Code : les leviers essentiels pour coder en 2026</title>
       <link>https://shamsetdean.github.io/humiAn/?article=claude-code-leviers-2026</link>
-      <description>Claude Code dépasse la génération de texte grâce à des outils dédiés : autorisations MCP, modes Plan et Thinking, fichiers Claude.md hiérarchiques et crochets de protection.</description>
+      <description>Claude Code dépasse la génération de texte grâce à des outils dédiés : autorisations MCP, modes Plan et Thinking, fichiers Claude.md hiérarchiques et crochets de protection.</description>
       <pubDate>Sun, 15 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
+      <author>Shams&amp;Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=claude-code-leviers-2026</guid>
     </item>
