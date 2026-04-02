@@ -5,13 +5,22 @@
     <link>https://shamsetdean.github.io/humiAn/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Thu, 02 Apr 2026 12:25:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 13:01:48 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams &amp; Dean</managingEditor>
     <category>Technologie</category>
     <category>Numérique</category>
     <ttl>1440</ttl>
+    <item>
+      <title>Le Parlement européen ferme la porte aux visuels IA</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=europe-interdit-visuels-ia</link>
+      <description>Commission, Conseil, Parlement : les trois institutions européennes s'alignent pour bannir les visuels entièrement générés par IA de leur communication officielle. Un choix qui tranche avec ce qui se pratique ailleurs.</description>
+      <pubDate>Fri, 03 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=europe-interdit-visuels-ia</guid>
+    </item>
     <item>
       <title>L'IA qui flatte trop nous rend elle plus égoïstes ?</title>
       <link>https://shamsetdean.github.io/humiAn/?article=ia-flatterie-stanford</link>
@@ -182,15 +191,6 @@
       <author>Shams &amp; Dean</author>
       <category>OS</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=homekit-experience</guid>
-    </item>
-    <item>
-      <title>Sécuriser son NAS à la maison : la méthode WireGuard sur Freebox Pop</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=nas-wireguard-freebox</link>
-      <description>Laisser son NAS ouvert sur Internet, c'est jouer avec le feu. WireGuard sur Freebox Pop offre une alternative simple, rapide et totalement sous ton contrôle.</description>
-      <pubDate>Fri, 13 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=nas-wireguard-freebox</guid>
     </item>
   </channel>
 </rss>
