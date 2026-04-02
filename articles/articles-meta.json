@@ -1,13 +1,5 @@
 [
   {
-    "id": "ia-futur-2026-prediction",
-    "titre": "2026 : les IA prédisent un futur dominé par l'intelligence artificielle. Vision réaliste ou exagérée ?",
-    "resume": "ChatGPT, Gemini, Claude : on les a interrogées sur 2026. Agents autonomes, surveillance généralisée, emplois supprimés. Ces visions impressionnent. Mais sont-elles inéluctables ?",
-    "categorie": "humian",
-    "date": "1 janvier 2027",
-    "auteur": "Shams & Dean"
-  },
-  {
     "id": "ia-flatterie-stanford",
     "titre": "L'IA qui flatte trop nous rend elle plus égoïstes ?",
     "resume": "Une étude Stanford publiée dans Science révèle que les assistants IA valident les comportements des utilisateurs 49 % plus souvent que les humains, même face à des mensonges ou des actions nuisibles. Un biais qui remodèle notre rapport à l'erreur, à l'autre, et à la vérité.",
@@ -177,16 +169,16 @@
   },
   {
     "id": "evolution-humaine-ia",
-    "titre": "Des chasseurs primitifs a l'IA : nos outils ont toujours transforme notre facon de penser",
-    "resume": "Du silex a l'algorithme, la logique est la même : nos outils etendent nos capacités. Mais ils redefinissent aussi nos hierarchies, nos comportements, notre facon d'être au monde.",
+    "titre": "Des chasseurs primitifs à l'IA : nos outils ont toujours transformé notre façon de penser",
+    "resume": "Du silex à l'algorithme, la logique est la même : nos outils étendent nos capacités. Mais ils redéfinissent aussi nos hiérarchies, nos comportements, notre façon d'être au monde.",
     "categorie": "humian",
     "date": "11 mars 2026",
     "auteur": "Shams & Dean"
   },
   {
     "id": "authenticite-contradictions",
-    "titre": "L'authenticite face a nos contradictions : le vrai defi",
-    "resume": "Nous valorisons la transparence, l'ouverture, le changement. Pourtant, au premier inconfort, nous nous crispons. Ce decalage a un nom : la dissonance cognitive.",
+    "titre": "L'authenticité face à nos contradictions : le vrai défi",
+    "resume": "Nous valorisons la transparence, l'ouverture, le changement. Pourtant, au premier inconfort, nous nous crispons. Ce décalage a un nom : la dissonance cognitive.",
     "categorie": "humian",
     "date": "10 mars 2026",
     "auteur": "Shams & Dean"
@@ -261,6 +253,14 @@
     "resume": "Un iPhone mal utilisé reste un gadget cher. Bien exploité, il structure ta journée. 10 applications gratuites, déjà installées, qui prouvent leur utilité au quotidien.",
     "categorie": "apple",
     "date": "1 mars 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
+    "id": "ia-futur-2026-prediction",
+    "titre": "2026 : les IA prédisent un futur dominé par l'intelligence artificielle. Vision réaliste ou exagérée ?",
+    "resume": "ChatGPT, Gemini, Claude : on les a interrogées sur 2026. Agents autonomes, surveillance généralisée, emplois supprimés. Ces visions impressionnent. Mais sont-elles inéluctables ?",
+    "categorie": "humian",
+    "date": "1 janvier 2026",
     "auteur": "Shams & Dean"
   },
   {
