@@ -959,7 +959,9 @@ nav { display:none; }
 .about-tag:hover { border-color:var(--accent); color:var(--accent); }
 .about-mention {
   font-size:.8rem; color:var(--ink-dim); line-height:1.7;
-  padding:1.2rem; border:1px solid var(--line);
+  padding:1.2rem; border:1px solid var(--glass-border);
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.35); backdrop-filter:blur(8px);
 }
 .about-mention strong { color:var(--ink-mid); font-weight:500; }
 
@@ -1086,10 +1088,12 @@ nav { display:none; }
 /* ── TOAST ── */
 .toast {
   position:fixed; bottom:70px; left:50%; transform:translateX(-50%) translateY(20px);
-  background:var(--surface); border:1px solid var(--accent);
+  background:rgba(255,255,255,0.85); backdrop-filter:blur(16px);
+  border:1px solid var(--glass-border); border-radius: var(--radius-pill);
   color:var(--ink); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase;
   padding:.6rem 1.4rem; z-index:9000; opacity:0; transition:all .3s;
   pointer-events:none; white-space:nowrap;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
 }
 .toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
 
@@ -1154,7 +1158,7 @@ footer { display: none; }
 }
 
 @media (max-width: 768px) {
-  .search-wrap { padding: .6rem 1rem; }
+  .search-wrap { padding: .6rem 1rem .6rem 4.5rem; }
   .search-input { padding-left: 2.2rem; }
 }
 .search-input:focus { border-color: rgba(122,31,46,0.4); box-shadow: 0 0 0 3px rgba(122,31,46,0.08); }
@@ -1173,7 +1177,7 @@ footer { display: none; }
 
 /* ── BOUTON NOTIFICATIONS ── */
 .notif-btn {
-  position: fixed; bottom: 70px; right: 1rem;
+  position: fixed; bottom: 5rem; right: 1rem;
   background: rgba(122,31,46,0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -1424,9 +1428,11 @@ body.lecture-mode #read-progress { display: block; }
 /* ── LIVRES À PROPOS ── */
 .about-book-series {
   display: flex; gap: 1.5rem; align-items: flex-start;
-  padding: 1.4rem; border: 1px solid var(--line);
-  background: var(--surface); margin-bottom: 1rem;
-  transition: border-color .2s;
+  padding: 1.4rem;
+  background: rgba(255,255,255,0.45); backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-sm);
+  margin-bottom: 1rem; transition: border-color .2s;
 }
 .about-book-series:hover { border-color: var(--accent); }
 @media (max-width: 600px) { .about-book-series { flex-direction: column; } }
@@ -1494,9 +1500,10 @@ body.lecture-mode #read-progress { display: block; }
 }
 @media (max-width: 600px) { .about-press { grid-template-columns: 1fr; } }
 .about-press-item {
-  padding: 1rem; border: 1px solid var(--line);
-  background: var(--surface); transition: border-color .2s;
-  border-left: 2px solid transparent;
+  padding: 1rem;
+  background: rgba(255,255,255,0.42); backdrop-filter:blur(8px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-sm);
+  transition: all .2s; border-left: 2px solid transparent;
 }
 .about-press-item:hover { border-color: var(--line); border-left-color: var(--accent); }
 .about-press-election { border-left: 2px solid var(--accent2) !important; }
@@ -1515,7 +1522,7 @@ body.lecture-mode #read-progress { display: block; }
 #back-to-top {
   position: fixed;
   bottom: 5rem;
-  right: 7.5rem;
+  left: 1rem;
   width: 36px; height: 36px;
   background: rgba(255,255,255,0.55);
   backdrop-filter: blur(12px);
@@ -1740,8 +1747,8 @@ body.lecture-mode #read-progress { display: block; }
 
 /* Catégories */
 .stats-cat-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px;
-  background: var(--line); border: 1px solid var(--line); margin-top: .5rem;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: .75rem;
+  background: transparent; border: none; margin-top: .5rem;
 }
 .stats-cat-cell {
   background: var(--bg); padding: 1.2rem 1rem; text-align: center;
@@ -1759,11 +1766,13 @@ body.lecture-mode #read-progress { display: block; }
 
 /* Dernière lecture */
 .stats-last-card {
-  border: 1px solid var(--line); padding: 1rem 1.2rem;
+  background: rgba(255,255,255,0.42); backdrop-filter:blur(8px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-sm);
+  padding: 1rem 1.2rem;
   display: flex; align-items: center; gap: 1rem;
-  margin-top: .5rem; transition: background .2s;
+  margin-top: .5rem; transition: all .2s;
 }
-.stats-last-card:hover { background: var(--surface); }
+.stats-last-card:hover { background: rgba(255,255,255,0.62); transform:translateY(-1px); }
 .stats-last-icon {
   font-size: 1.4rem; flex-shrink: 0; opacity: .4;
 }
@@ -1989,10 +1998,7 @@ body.lecture-mode #read-progress { display: block; }
 
   /* ── BARRE DE NAV BAS ── */
   .bottom-nav {
-    padding: .45rem 1rem;           /* 16px bord gauche/droit = standard UX */
-    gap: .3rem;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    display: none !important;
   }
   .bottom-nav-logo {
     padding: .4rem .5rem;
@@ -2046,9 +2052,23 @@ body.lecture-mode #read-progress { display: block; }
   .hero { padding: 3rem 2rem 2rem; }
   .cat-strip { padding: .75rem 1rem; }
 }
+
 @media (min-width: 769px) {
-  .dock-bar { display: none !important; }
-  .dock-expanded-menu { display: none !important; }
+  .dock-bar {
+    left: auto;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: auto;
+    border-radius: 50px;
+  }
+  .dock-expanded-menu {
+    left: auto;
+    right: 1.5rem;
+    bottom: 5rem;
+    width: 320px;
+  }
+}
+@media (min-width: 769px) {
   #bottom-nav-desktop { display: flex !important; }
 }
 @media (max-width: 768px) {
@@ -2907,6 +2927,7 @@ body.lecture-mode #read-progress { display: block; }
       <span class="dock-h-line dock-h-short"></span>
     </span>
   </button>
+</nav>
 
 <!-- NAV DESKTOP -->
 <nav class="bottom-nav" id="bottom-nav-desktop" role="navigation" aria-label="Navigation principale desktop">
@@ -2917,7 +2938,6 @@ body.lecture-mode #read-progress { display: block; }
   <div class="bnav-item"><button type="button" onclick="showView('favoris')">&#9829; Favoris</button></div>
   <div class="bnav-item"><button type="button" onclick="showView('stats')">&#9650; Stats</button></div>
   <div class="bnav-item"><button type="button" class="bnav-last" onclick="showView('about')">&Agrave; propos</button></div>
-</nav>
 </nav>
 
 <script>
