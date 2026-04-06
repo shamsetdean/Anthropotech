@@ -261,7 +261,7 @@ nav { display:none; }
   border:1px solid rgba(255,255,255,0.11);
   border-radius:50px;
   display:flex; align-items:center; justify-content:space-between;
-  padding:6px 8px; gap:2px; z-index:600;
+  padding:6px 8px; gap:2px; z-index:8000;
   box-shadow:0 6px 28px rgba(0,0,0,0.28);
 }
 .bottom-nav-logo {
@@ -559,8 +559,8 @@ nav { display:none; }
   position:relative; overflow:hidden; display:flex; flex-direction:column;
 }
 .article-card::before {
-  content:''; position:absolute; top:0; left:15%; right:15%; height:1px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.85), transparent);
+  content:''; position:absolute; top:0; left:20%; right:20%; height:1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.55), transparent);
   pointer-events:none; border-radius:1px;
 }
 .article-card::after {
@@ -883,8 +883,10 @@ nav { display:none; }
   margin-top: 1rem;
 }
 .about-certif-card {
-  border: 1px solid var(--line); padding: .8rem;
-  background: var(--surface); transition: border-color .2s;
+  border: 1px solid var(--glass-border); padding: .8rem;
+  background: rgba(255,255,255,0.45); backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border-radius: var(--radius-sm); transition: all .2s;
 }
 .about-certif-card:hover { border-color: var(--accent); }
 .about-certif-label {
@@ -1096,7 +1098,7 @@ footer { display: none; }
   padding: .75rem 1.5rem;
   border-bottom: none;
   background: transparent;
-  position: sticky; top: 0; z-index: 1500;
+  position: sticky; top: 0; z-index: 900;
 }
 .search-input {
   width: 100%;
@@ -1313,7 +1315,7 @@ body.lecture-mode #read-progress { display: block; }
 }
 .dark-toggle:hover { opacity: 1; border-color: var(--accent); color: var(--accent); background: rgba(255,255,255,0.75); }
 @media (max-width: 768px) {
-  .dark-toggle { top: .55rem; left: .6rem; width: 26px; height: 26px; font-size: .7rem; }
+  .dark-toggle { top: .55rem; left: .6rem; width: 26px; height: 26px; font-size: .7rem; z-index: 3000; }
 }
 
 
@@ -1617,6 +1619,7 @@ body.lecture-mode #read-progress { display: block; }
 /* Bandeau hero stats */
 .stats-hero {
   background: linear-gradient(135deg, var(--accent) 0%, #9b2a3e 100%);
+  border-radius: var(--radius-card);
   padding: 2rem 2.5rem; margin: 1.5rem 0 2rem;
   display: flex; align-items: center; justify-content: space-between;
   gap: 1.5rem; flex-wrap: wrap;
@@ -1638,16 +1641,18 @@ body.lecture-mode #read-progress { display: block; }
 /* KPIs */
 .stats-kpi-row {
   display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 1px; background: var(--line);
-  border: 1px solid var(--line);
+  gap: .75rem; background: transparent;
+  border: none;
   margin: 0 0 2rem;
 }
 @media (max-width: 600px) { .stats-kpi-row { grid-template-columns: 1fr 1fr; } }
 .stats-kpi {
-  background: var(--bg); padding: 1.4rem 1rem; text-align: center;
-  transition: background .2s;
+  background: rgba(255,255,255,0.45); backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  border:1px solid var(--glass-border); border-radius:var(--radius-sm);
+  padding: 1.4rem 1rem; text-align: center; transition: all .2s;
 }
-.stats-kpi:hover { background: var(--surface); }
+.stats-kpi:hover { background: rgba(255,255,255,0.65); transform:translateY(-1px); }
 .stats-kpi-num {
   font-family: var(--f-serif); font-size: 2.4rem; font-weight: 300;
   color: var(--accent); line-height: 1; display: block;
@@ -1736,9 +1741,11 @@ body.lecture-mode #read-progress { display: block; }
 /* Bouton reset */
 .stats-reset-btn {
   margin-top: 3rem; font-size: .58rem; letter-spacing: .14em;
-  text-transform: uppercase; color: var(--ink-dim);
-  background: none; border: 1px solid var(--line);
-  padding: .5rem 1.2rem; cursor: pointer; transition: all .2s;
+  text-transform: uppercase; color: var(--ink-mid);
+  background: rgba(255,255,255,0.42); backdrop-filter:blur(8px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-pill);
+  padding: .5rem 1.4rem; cursor: pointer; transition: all .2s;
   font-family: var(--f-sans); display: flex; align-items: center; gap: .5rem;
 }
 .stats-reset-btn:hover { border-color: var(--accent); color: var(--accent); }
@@ -1991,6 +1998,11 @@ body.lecture-mode #read-progress { display: block; }
 @media (max-width: 768px) {
   .topbar-signature { padding: 10px 1rem; justify-content: center; }
 }
+
+@media (min-width: 769px) {
+  .dock-bar { display: none !important; }
+  .dock-expanded-menu { display: none !important; }
+}
 @media (max-width:480px) {
   .hero { padding: 2.4rem 1.2rem 1.5rem; }
   .hero h1 { font-size: 2.2rem; }
@@ -2040,8 +2052,10 @@ body.lecture-mode #read-progress { display: block; }
   --glass-shadow:0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2);
 }
 [data-theme="dark"] body { background: linear-gradient(135deg, #0f1117 0%, #131820 50%, #111520 100%) !important; background-attachment: fixed !important; color:var(--ink); }
-[data-theme="dark"] .article-card { background:rgba(25,31,44,0.68) !important; border-color:rgba(255,255,255,0.09) !important; }
-[data-theme="dark"] .article-card:hover { background:rgba(35,43,60,0.82) !important; }
+
+[data-theme="dark"] .article-card::before { opacity: 0.3; }
+[data-theme="dark"] .article-card { background:rgba(32,40,58,0.78) !important; border-color:rgba(255,255,255,0.12) !important; }
+[data-theme="dark"] .article-card:hover { background:rgba(42,52,72,0.90) !important; }
 [data-theme="dark"] .search-input { background:rgba(22,27,36,0.65) !important; }
 [data-theme="dark"] .cat-tab { background:rgba(22,27,36,0.55) !important; }
 [data-theme="dark"] .cat-tab.active { background:var(--accent) !important; color:#fff !important; }
@@ -2178,7 +2192,7 @@ body.lecture-mode #read-progress { display: block; }
   background:rgba(16,18,26,0.92); backdrop-filter:blur(28px) saturate(1.8);
   -webkit-backdrop-filter:blur(28px) saturate(1.8);
   border:1px solid rgba(255,255,255,0.10); border-radius:22px; padding:8px;
-  grid-template-columns:1fr 1fr; gap:6px; z-index:590;
+  grid-template-columns:1fr 1fr; gap:6px; z-index:9000;
   box-shadow:0 -4px 32px rgba(0,0,0,0.3); animation:fadeUp .2s ease;
 }
 .dock-expanded-menu.open { display:grid; }
@@ -2981,7 +2995,7 @@ function renderArticles(articles){
   setGridMode(gridMode);
   if(!filtered.length){grid.innerHTML='<div class="empty-state"><strong>Aucun article pour l\'instant</strong>Les articles apparaîtront ici.</div>';return;}
   grid.innerHTML=filtered.map((a,i)=>`
-    <div class="article-card" onclick="openArticle(${allArticles.indexOf(a)})" style="animation-delay:${i*.06}s" role="listitem" tabindex="0" aria-label="${a.titre}" data-idx="${allArticles.indexOf(a)}"><span class="card-num">${String(allArticles.indexOf(a)+1).padStart(2,'0')}</span>
+    <div class="article-card" onclick="animateAndOpen(this, ${allArticles.indexOf(a)})" style="animation-delay:${i*.06}s" role="listitem" tabindex="0" aria-label="${a.titre}" data-idx="${allArticles.indexOf(a)}"><span class="card-num">${String(allArticles.indexOf(a)+1).padStart(2,'0')}</span>
       <span class="article-card-num">${String(i+1).padStart(2,'0')}</span>
       <button type="button" class="fav-btn" onclick="toggleFavorite(event, '${a.id||a._id}')" aria-label="Favori">${favorites.includes(a.id||a._id)?'♥':'♡'}</button>
       <div class="article-cat">${catLabels[a.categorie]||a.categorie}</div>
@@ -2996,16 +3010,7 @@ function renderArticles(articles){
   bindHover('.article-card');
   document.querySelectorAll('.article-card').forEach(c=>{
     c.addEventListener('keydown',e=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();c.click();} });
-    c.addEventListener('click', function() {
-      const grid = document.getElementById('articles-grid');
-      if(!grid) return;
-      grid.classList.add('selecting');
-      this.classList.add('card-selected');
-      setTimeout(() => {
-        grid.classList.remove('selecting');
-        this.classList.remove('card-selected');
-      }, 480);
-    }, { once: false });
+    /* animation gérée par animateAndOpen() */
   });
   applyReadHistory();
   applyFavorites();
@@ -3174,6 +3179,23 @@ const ReadStats = {
 };
 
 /* ── ARTICLE ── */
+
+// ── ANIMATION + OUVERTURE ARTICLE ──
+function animateAndOpen(el, idx) {
+  const grid = document.getElementById('articles-grid');
+  if(grid) {
+    grid.classList.add('selecting');
+    el.classList.add('card-selected');
+  }
+  setTimeout(() => {
+    if(grid) {
+      grid.classList.remove('selecting');
+      el.classList.remove('card-selected');
+    }
+    openArticle(idx);
+  }, 320);
+}
+
 async function openArticle(idx){
   const a=allArticles[idx]; if(!a)return;
   stopTTS();
