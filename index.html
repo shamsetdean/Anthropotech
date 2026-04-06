@@ -543,32 +543,28 @@ nav { display:none; }
 
 /* ── ANIMATION SÉLECTION ARTICLE ── */
 @keyframes cardRise {
-  0%   { transform: scale(1) translateY(0); }
-  50%  { transform: scale(1.05) translateY(-14px); box-shadow: 0 28px 70px rgba(122,31,46,0.28), 0 10px 24px rgba(0,0,0,0.18); }
-  100% { transform: scale(1.03) translateY(-8px); box-shadow: 0 20px 50px rgba(122,31,46,0.20); }
+  0%   { transform: scale(1) translateY(0); opacity: 1; }
+  30%  { transform: scale(1.06) translateY(-20px); box-shadow: 0 32px 80px rgba(122,31,46,0.30), 0 12px 28px rgba(0,0,0,0.22); opacity: 1; }
+  100% { transform: scale(1.04) translateY(-12px); box-shadow: 0 24px 60px rgba(122,31,46,0.22); opacity: 1; }
 }
-@keyframes cardSink {
-  0%   { transform: scale(1) translateY(0); }
-  50%  { transform: scale(0.92) translateY(28px); }
-  100% { transform: scale(0.90) translateY(32px); }
+@keyframes cardUnder {
+  0%   { transform: scale(1) translateY(0); opacity: 1; filter: none; }
+  20%  { transform: scale(0.96) translateY(10px); opacity: .6; filter: blur(1px); }
+  100% { transform: scale(0.88) translateY(60px); opacity: .15; filter: blur(2.5px); }
 }
 .articles-grid {
   position: relative;
 }
 .articles-grid.selecting .article-card {
-  opacity: .18;
-  filter: blur(2px);
-  animation: cardSink .9s cubic-bezier(.4,0,.2,1) forwards;
+  animation: cardUnder 1.1s cubic-bezier(.4,0,.6,1) forwards;
   pointer-events: none;
-  position: relative;
   z-index: 0;
+  position: relative;
 }
 .articles-grid.selecting .article-card.card-selected {
-  opacity: 1;
-  filter: none;
-  animation: cardRise .9s cubic-bezier(.34,1.56,.64,1) forwards;
+  animation: cardRise 1.1s cubic-bezier(.34,1.56,.64,1) forwards;
+  z-index: 200 !important;
   position: relative;
-  z-index: 100;
   pointer-events: auto;
 }
 /* ── HIGHLIGHT RECHERCHE ── */
@@ -3331,17 +3327,25 @@ const ReadStats = {
 // ── ANIMATION + OUVERTURE ARTICLE ──
 function animateAndOpen(el, idx) {
   const grid = document.getElementById('articles-grid');
-  if(grid) {
-    grid.classList.add('selecting');
-    el.classList.add('card-selected');
-  }
+  if(!grid) { openArticle(idx); return; }
+
+  // Forcer z-index : carte sélectionnée au-dessus, les autres en dessous
+  const cards = grid.querySelectorAll('.article-card');
+  cards.forEach(c => {
+    c.style.zIndex = '0';
+    c.style.position = 'relative';
+  });
+  el.style.zIndex = '200';
+
+  grid.classList.add('selecting');
+  el.classList.add('card-selected');
+
   setTimeout(() => {
-    if(grid) {
-      grid.classList.remove('selecting');
-      el.classList.remove('card-selected');
-    }
+    grid.classList.remove('selecting');
+    el.classList.remove('card-selected');
+    cards.forEach(c => { c.style.zIndex = ''; c.style.position = ''; });
     openArticle(idx);
-  }, 900);
+  }, 1100);
 }
 
 async function openArticle(idx){
@@ -3840,7 +3844,7 @@ function toggleDark(){
     setTimeout(() => {
       splash.style.display = 'none';
       try { sessionStorage.setItem('splash-seen', '1'); } catch(e){}
-    }, 900);
+    }, 1100);
   }, 2500);
 })();
 
