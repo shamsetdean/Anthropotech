@@ -119,7 +119,7 @@
   --glass-blur: blur(18px) saturate(1.5);
   --glass-border: rgba(255,255,255,0.68);
   --glass-shadow: 0 4px 24px rgba(122,31,46,0.08), 0 1px 4px rgba(0,0,0,0.05);
-  --radius-card: 22px;
+  --radius-card: 14px;
   --radius-pill: 50px;
   --radius-sm: 12px;
   --f-serif: 'Georgia', 'Times New Roman', serif;
@@ -535,36 +535,39 @@ nav { display:none; }
 .section-count { font-size:.6rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-dim); }
 
 .articles-grid {
-  display:grid; grid-template-columns:repeat(auto-fill,minmax(310px,1fr));
-  gap: 1rem;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(420px,1fr));
+  gap: .75rem;
   padding: 0 1rem 1rem;
 }
 
 
 /* ── ANIMATION SÉLECTION ARTICLE ── */
 @keyframes cardRise {
-  0%   { transform: scale(1) translateY(0) translateZ(0); box-shadow: var(--glass-shadow); z-index: 10; }
-  40%  { transform: scale(1.06) translateY(-20px) translateZ(60px); box-shadow: 0 32px 80px rgba(122,31,46,0.28), 0 12px 28px rgba(0,0,0,0.18); }
-  100% { transform: scale(1.02) translateY(-8px) translateZ(40px); box-shadow: 0 20px 50px rgba(122,31,46,0.20), 0 6px 16px rgba(0,0,0,0.12); }
+  0%   { transform: scale(1); z-index: 100; }
+  30%  { transform: scale(1.06) translateY(-16px); box-shadow: 0 32px 80px rgba(122,31,46,0.30), 0 12px 28px rgba(0,0,0,0.20); }
+  100% { transform: scale(1.04) translateY(-10px); box-shadow: 0 24px 60px rgba(122,31,46,0.22), 0 8px 20px rgba(0,0,0,0.15); }
 }
 @keyframes cardSink {
-  0%   { transform: translateY(0) scale(1) translateZ(0); }
-  40%  { transform: translateY(30px) scale(0.93) translateZ(-40px); }
-  100% { transform: translateY(20px) scale(0.95) translateZ(-30px); }
+  0%   { transform: scale(1) translateY(0); z-index: 1; }
+  100% { transform: scale(0.88) translateY(40px); z-index: 0; }
 }
-.articles-grid { perspective: 1000px; }
+.articles-grid {
+  position: relative;
+}
 .articles-grid.selecting .article-card {
-  opacity: .25;
-  filter: blur(1.5px);
-  animation: cardSink .65s cubic-bezier(.4,0,.2,1) forwards;
-  transition: opacity .3s ease;
+  opacity: .2;
+  filter: blur(2px);
+  animation: cardSink .55s cubic-bezier(.4,0,.6,1) forwards;
   pointer-events: none;
-  z-index: 1;
+  position: relative;
+  z-index: 0;
 }
 .articles-grid.selecting .article-card.card-selected {
-  opacity: 1; filter: none;
-  animation: cardRise .65s cubic-bezier(.34,1.56,.64,1) forwards;
-  z-index: 10; position: relative;
+  opacity: 1;
+  filter: none;
+  animation: cardRise .55s cubic-bezier(.34,1.56,.64,1) forwards;
+  position: relative;
+  z-index: 100;
   pointer-events: auto;
 }
 /* ── HIGHLIGHT RECHERCHE ── */
@@ -1258,7 +1261,6 @@ body.lecture-mode .dark-toggle,
 body.lecture-mode .dyslexie-toggle,
 body.lecture-mode .notif-btn,
 body.lecture-mode #onesignal-bell-container,
-body.lecture-mode .a11y-bar,
 body.lecture-mode .bottom-nav,
 body.lecture-mode .dock-bar,
 body.lecture-mode .dock-expanded-menu { opacity: 0; pointer-events: none; transition: opacity .4s; }
@@ -2089,6 +2091,21 @@ body.lecture-mode #read-progress { display: block; }
   .social-bar { display: none; }
 }
 
+
+@media (max-width: 768px) {
+  [data-theme="dark"] .hero,
+  [data-theme="dark"] .search-wrap,
+  [data-theme="dark"] .cat-strip,
+  [data-theme="dark"] .articles-section,
+  [data-theme="dark"] .view {
+    background: transparent !important;
+  }
+}
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+  .hero, .search-wrap, .cat-strip, .articles-section, .view {
+    background: transparent !important;
+  }
+}
 @keyframes fadeUp {
   from { opacity:0; transform:translateY(16px); }
   to   { opacity:1; transform:translateY(0); }
@@ -3390,7 +3407,15 @@ function toggleLecture(){
   document.body.classList.toggle('lecture-mode', lectureMode);
   const btn = $('lecture-btn');
   if(btn) btn.classList.toggle('active', lectureMode);
-  showToast(lectureMode ? 'Mode lecture activé' : 'Mode lecture désactivé');
+  if(lectureMode){
+    showToast('Mode lecture activé — démarrage de la lecture...');
+    setTimeout(() => {
+      if(currentArticle && !ttsActive) toggleTTS();
+    }, 400);
+  } else {
+    stopTTS();
+    showToast('Mode lecture désactivé');
+  }
 }
 
 function filterBreadcrumbCat(){
