@@ -1,5 +1,13 @@
 [
   {
+    "id": "ia-pas-toutes-pareilles",
+    "titre": "Les IA ne se valent pas. Et c'est une bonne nouvelle.",
+    "resume": "La question « quelle est la meilleure IA » est mal posée. Ce que les usages réels révèlent, c'est que le bon outil dépend entièrement de la tâche. Et aucun comparatif généraliste ne peut honnêtement trancher.",
+    "categorie": "tech",
+    "date": "6 avril 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "europe-interdit-visuels-ia",
     "titre": "Le Parlement européen ferme la porte aux visuels IA",
     "resume": "Commission, Conseil, Parlement : les trois institutions européennes s'alignent pour bannir les visuels entièrement générés par IA de leur communication officielle. Un choix qui tranche avec ce qui se pratique ailleurs.",
