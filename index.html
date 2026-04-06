@@ -232,8 +232,7 @@ body.cur-hover #cur-ring { width:52px; height:52px; border-color:rgba(122,31,46,
 }
 
 body {
-  background: linear-gradient(135deg, #f5f0ee 0%, #ede5e0 50%, #e8ddd8 100%);
-  background-attachment: fixed;
+  background: #f0ebe6;
   color: var(--ink);
   font-family: var(--f-sans);
   font-weight: 300;
@@ -544,25 +543,27 @@ nav { display:none; }
 
 /* ── ANIMATION SÉLECTION ARTICLE ── */
 @keyframes cardRise {
-  0%   { transform: scale(1) translateY(0); box-shadow: var(--glass-shadow); }
-  40%  { transform: scale(1.05) translateY(-12px); box-shadow: 0 28px 70px rgba(122,31,46,0.25), 0 10px 24px rgba(0,0,0,0.14); }
-  100% { transform: scale(1) translateY(0); box-shadow: var(--glass-shadow); }
+  0%   { transform: scale(1) translateY(0) translateZ(0); box-shadow: var(--glass-shadow); z-index: 10; }
+  40%  { transform: scale(1.06) translateY(-20px) translateZ(60px); box-shadow: 0 32px 80px rgba(122,31,46,0.28), 0 12px 28px rgba(0,0,0,0.18); }
+  100% { transform: scale(1.02) translateY(-8px) translateZ(40px); box-shadow: 0 20px 50px rgba(122,31,46,0.20), 0 6px 16px rgba(0,0,0,0.12); }
 }
 @keyframes cardSink {
-  0%   { transform: translateY(0) scale(1); }
-  40%  { transform: translateY(8px) scale(0.96); }
-  100% { transform: translateY(0) scale(1); }
+  0%   { transform: translateY(0) scale(1) translateZ(0); }
+  40%  { transform: translateY(30px) scale(0.93) translateZ(-40px); }
+  100% { transform: translateY(20px) scale(0.95) translateZ(-30px); }
 }
+.articles-grid { perspective: 1000px; }
 .articles-grid.selecting .article-card {
-  opacity: .35;
-  filter: blur(1px);
-  animation: cardSink .6s cubic-bezier(.4,0,.2,1) both;
+  opacity: .25;
+  filter: blur(1.5px);
+  animation: cardSink .65s cubic-bezier(.4,0,.2,1) forwards;
   transition: opacity .3s ease;
   pointer-events: none;
+  z-index: 1;
 }
 .articles-grid.selecting .article-card.card-selected {
   opacity: 1; filter: none;
-  animation: cardRise .65s cubic-bezier(.34,1.56,.64,1) both;
+  animation: cardRise .65s cubic-bezier(.34,1.56,.64,1) forwards;
   z-index: 10; position: relative;
   pointer-events: auto;
 }
@@ -2102,7 +2103,7 @@ body.lecture-mode #read-progress { display: block; }
     --glass-border: rgba(255,255,255,0.10);
     --glass-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2);
   }
-  body { background: linear-gradient(135deg, #0f1117 0%, #131820 50%, #111520 100%) !important; background-attachment: fixed !important; }
+  body { background: #0f1117 !important; }
   .article-card { background:rgba(25,31,44,0.68) !important; border-color:rgba(255,255,255,0.09) !important; }
   .article-card:hover { background:rgba(35,43,60,0.82) !important; }
   .search-input { background:rgba(22,27,36,0.65) !important; }
@@ -2122,7 +2123,7 @@ body.lecture-mode #read-progress { display: block; }
   --glass-border:rgba(255,255,255,0.10);
   --glass-shadow:0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2);
 }
-[data-theme="dark"] body { background: linear-gradient(135deg, #0f1117 0%, #131820 50%, #111520 100%) !important; background-attachment: fixed !important; color:var(--ink); }
+[data-theme="dark"] body { background: #0f1117 !important; color:var(--ink); }
 
 [data-theme="dark"] .article-card::before { opacity: 0.3; }
 
@@ -2249,7 +2250,7 @@ body.lecture-mode #read-progress { display: block; }
     background-attachment: scroll !important;
   }
   [data-theme="dark"] body {
-    background: linear-gradient(135deg, #0f1117 0%, #131820 50%, #111520 100%) !important;
+    background: #0f1117 !important;
   }
 }
 
