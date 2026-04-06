@@ -255,14 +255,14 @@ nav { display:none; }
 /* ── BOTTOM NAV ── */
 .dock-bar {
   position:fixed; bottom:12px; left:12px; right:12px;
-  background:rgba(16,18,26,0.88);
-  backdrop-filter:blur(24px) saturate(1.8);
-  -webkit-backdrop-filter:blur(24px) saturate(1.8);
-  border:1px solid rgba(255,255,255,0.11);
+  background:rgba(245,240,238,0.82);
+  backdrop-filter:blur(24px) saturate(1.5);
+  -webkit-backdrop-filter:blur(24px) saturate(1.5);
+  border:1px solid rgba(255,255,255,0.70);
   border-radius:50px;
   display:flex; align-items:center; justify-content:space-between;
-  padding:6px 8px; gap:2px; z-index:8000;
-  box-shadow:0 6px 28px rgba(0,0,0,0.28);
+  padding:6px 12px; gap:2px; z-index:8000;
+  box-shadow:0 4px 20px rgba(0,0,0,0.10);
 }
 .bottom-nav {
   position:fixed; bottom:0; left:0; right:0;
@@ -450,8 +450,9 @@ nav { display:none; }
 }
 
 @media (max-width: 768px) {
+  html { font-size: 17.5px; }
   .article-full-body {
-    font-size: 1.09375rem;
+    font-size: 1.0625rem;
     line-height: 1.85;
   }
 }
@@ -544,24 +545,24 @@ nav { display:none; }
 /* ── ANIMATION SÉLECTION ARTICLE ── */
 @keyframes cardRise {
   0%   { transform: scale(1) translateY(0); box-shadow: var(--glass-shadow); }
-  35%  { transform: scale(1.04) translateY(-8px); box-shadow: 0 24px 60px rgba(122,31,46,0.22), 0 8px 20px rgba(0,0,0,0.12); }
+  40%  { transform: scale(1.05) translateY(-12px); box-shadow: 0 28px 70px rgba(122,31,46,0.25), 0 10px 24px rgba(0,0,0,0.14); }
   100% { transform: scale(1) translateY(0); box-shadow: var(--glass-shadow); }
 }
 @keyframes cardSink {
   0%   { transform: translateY(0) scale(1); }
-  35%  { transform: translateY(6px) scale(0.97); }
+  40%  { transform: translateY(8px) scale(0.96); }
   100% { transform: translateY(0) scale(1); }
 }
 .articles-grid.selecting .article-card {
-  opacity: .38;
-  filter: blur(0.8px);
-  animation: cardSink .4s cubic-bezier(.4,0,.2,1) both;
-  transition: opacity .25s ease;
+  opacity: .35;
+  filter: blur(1px);
+  animation: cardSink .6s cubic-bezier(.4,0,.2,1) both;
+  transition: opacity .3s ease;
   pointer-events: none;
 }
 .articles-grid.selecting .article-card.card-selected {
   opacity: 1; filter: none;
-  animation: cardRise .45s cubic-bezier(.34,1.56,.64,1) both;
+  animation: cardRise .65s cubic-bezier(.34,1.56,.64,1) both;
   z-index: 10; position: relative;
   pointer-events: auto;
 }
@@ -664,14 +665,12 @@ nav { display:none; }
   margin-bottom: 1.2rem;
 }
 .article-logo {
-  width: 56px; height: 56px;
-  border-radius: 16px;
-  opacity: .88;
-  border: 1px solid var(--glass-border);
-  background: rgba(30,37,51,0.7);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  padding: 4px;
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  opacity: .9;
+  border: none;
+  background: transparent;
+  padding: 0;
   transition: opacity .2s;
 }
 .article-logo:hover { opacity: 1; }
@@ -1139,6 +1138,10 @@ footer { display: none; }
   border-bottom: none;
   background: transparent;
   position: sticky; top: 0; z-index: 900;
+  display: flex; justify-content: center;
+}
+.search-wrap .search-input {
+  max-width: 600px;
 }
 .search-input {
   width: 100%;
@@ -1255,7 +1258,9 @@ body.lecture-mode .dyslexie-toggle,
 body.lecture-mode .notif-btn,
 body.lecture-mode #onesignal-bell-container,
 body.lecture-mode .a11y-bar,
-body.lecture-mode .bottom-nav { opacity: 0; pointer-events: none; transition: opacity .4s; }
+body.lecture-mode .bottom-nav,
+body.lecture-mode .dock-bar,
+body.lecture-mode .dock-expanded-menu { opacity: 0; pointer-events: none; transition: opacity .4s; }
 body.lecture-mode #read-progress { display: block; }
 .lecture-btn.active { color: var(--accent) !important; border-color: var(--accent) !important; }
 
@@ -2055,25 +2060,20 @@ body.lecture-mode #read-progress { display: block; }
 
 @media (min-width: 769px) {
   .dock-bar {
-    left: auto;
-    right: 1.5rem;
-    bottom: 1.5rem;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
     width: auto;
     border-radius: 50px;
   }
   .dock-expanded-menu {
-    left: auto;
-    right: 1.5rem;
-    bottom: 5rem;
-    width: 320px;
+    left: 12px;
+    right: 12px;
+    bottom: 72px;
+    width: auto;
   }
 }
-@media (min-width: 769px) {
-  #bottom-nav-desktop { display: flex !important; }
-}
-@media (max-width: 768px) {
-  #bottom-nav-desktop { display: none !important; }
-}
+
 @media (max-width:480px) {
   .hero { padding: 2.4rem 1.2rem 1.5rem; }
   .hero h1 { font-size: 2.2rem; }
@@ -2258,21 +2258,21 @@ body.lecture-mode #read-progress { display: block; }
   width:40px; height:40px; border-radius:50%;
   display:flex; align-items:center; justify-content:center;
   background:none; border:none; cursor:pointer;
-  color:rgba(232,228,221,0.45); transition:all .18s; flex-shrink:0;
+  color:var(--ink-dim); transition:all .18s; flex-shrink:0;
 }
-.dock-btn:hover, .dock-btn.active { background:rgba(122,31,46,0.25); color:rgba(181,57,77,0.9); }
+.dock-btn:hover, .dock-btn.active { background:rgba(122,31,46,0.25); color:var(--accent); }
 .dock-sep { width:1px; height:20px; background:rgba(255,255,255,0.08); flex-shrink:0; margin:0 2px; }
 .dock-pill-btn {
   display:flex; align-items:center; gap:6px;
-  background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.1);
+  background:rgba(122,31,46,0.08); border:1px solid rgba(255,255,255,0.1);
   border-radius:50px; padding:5px 10px 5px 8px;
   cursor:pointer; transition:all .18s;
-  font-family:var(--f-serif); font-size:.72rem; font-weight:300; color:rgba(232,228,221,0.6);
+  font-family:var(--f-serif); font-size:.72rem; font-weight:300; color:var(--ink);
 }
-.dock-pill-btn:hover { background:rgba(255,255,255,0.12); }
-.dock-pill-logo em { color:#b5394d; font-style:italic; }
+.dock-pill-btn:hover { background:rgba(122,31,46,0.14); }
+.dock-pill-logo em { color:var(--accent); font-style:italic; }
 .dock-pill-icon { display:flex; flex-direction:column; gap:2.5px; width:20px; height:20px; align-items:center; justify-content:center; }
-.dock-h-line { width:11px; height:1.5px; background:#b5394d; border-radius:2px; display:block; transition:all .2s; }
+.dock-h-line { width:11px; height:1.5px; background:var(--accent); border-radius:2px; display:block; transition:all .2s; }
 .dock-h-short { width:7px; }
 .dock-expanded-menu {
   display:none; position:fixed; bottom:72px; left:12px; right:12px;
@@ -2929,16 +2929,6 @@ body.lecture-mode #read-progress { display: block; }
   </button>
 </nav>
 
-<!-- NAV DESKTOP -->
-<nav class="bottom-nav" id="bottom-nav-desktop" role="navigation" aria-label="Navigation principale desktop">
-  <button type="button" class="bottom-nav-logo" onclick="showView('home')" aria-label="Accueil Anthropotech">Anthropo<em>tech</em></button>
-  <div class="bnav-item"><button type="button" onclick="filterCat('tech',null)">Tech</button></div>
-  <div class="bnav-item"><button type="button" onclick="filterCat('os',null)">OS</button></div>
-  <div class="bnav-item"><button type="button" onclick="filterCat('humian',null)">Hum&#123;i&#125;An</button></div>
-  <div class="bnav-item"><button type="button" onclick="showView('favoris')">&#9829; Favoris</button></div>
-  <div class="bnav-item"><button type="button" onclick="showView('stats')">&#9650; Stats</button></div>
-  <div class="bnav-item"><button type="button" class="bnav-last" onclick="showView('about')">&Agrave; propos</button></div>
-</nav>
 
 <script>
 /* ── HELPER DOM ── */
@@ -3315,7 +3305,7 @@ function animateAndOpen(el, idx) {
       el.classList.remove('card-selected');
     }
     openArticle(idx);
-  }, 320);
+  }, 650);
 }
 
 async function openArticle(idx){
