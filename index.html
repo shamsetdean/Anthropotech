@@ -537,27 +537,28 @@ nav { display:none; }
 .articles-grid {
   display:grid; grid-template-columns:repeat(auto-fill,minmax(420px,1fr));
   gap: .75rem;
-  padding: 0 1rem 1rem;
+  padding: 0 1rem 7rem;
 }
 
 
 /* ── ANIMATION SÉLECTION ARTICLE ── */
 @keyframes cardRise {
-  0%   { transform: scale(1); z-index: 100; }
-  30%  { transform: scale(1.06) translateY(-16px); box-shadow: 0 32px 80px rgba(122,31,46,0.30), 0 12px 28px rgba(0,0,0,0.20); }
-  100% { transform: scale(1.04) translateY(-10px); box-shadow: 0 24px 60px rgba(122,31,46,0.22), 0 8px 20px rgba(0,0,0,0.15); }
+  0%   { transform: scale(1) translateY(0); }
+  50%  { transform: scale(1.05) translateY(-14px); box-shadow: 0 28px 70px rgba(122,31,46,0.28), 0 10px 24px rgba(0,0,0,0.18); }
+  100% { transform: scale(1.03) translateY(-8px); box-shadow: 0 20px 50px rgba(122,31,46,0.20); }
 }
 @keyframes cardSink {
-  0%   { transform: scale(1) translateY(0); z-index: 1; }
-  100% { transform: scale(0.88) translateY(40px); z-index: 0; }
+  0%   { transform: scale(1) translateY(0); }
+  50%  { transform: scale(0.92) translateY(28px); }
+  100% { transform: scale(0.90) translateY(32px); }
 }
 .articles-grid {
   position: relative;
 }
 .articles-grid.selecting .article-card {
-  opacity: .2;
+  opacity: .18;
   filter: blur(2px);
-  animation: cardSink .55s cubic-bezier(.4,0,.6,1) forwards;
+  animation: cardSink .9s cubic-bezier(.4,0,.2,1) forwards;
   pointer-events: none;
   position: relative;
   z-index: 0;
@@ -565,7 +566,7 @@ nav { display:none; }
 .articles-grid.selecting .article-card.card-selected {
   opacity: 1;
   filter: none;
-  animation: cardRise .55s cubic-bezier(.34,1.56,.64,1) forwards;
+  animation: cardRise .9s cubic-bezier(.34,1.56,.64,1) forwards;
   position: relative;
   z-index: 100;
   pointer-events: auto;
@@ -1192,11 +1193,11 @@ footer { display: none; }
   border: 1px solid rgba(255,255,255,0.2); border-radius: 50px;
   padding: .5rem 1rem; font-size: .65rem;
   letter-spacing: .12em; text-transform: uppercase;
-  cursor: pointer; z-index: 250;
+  cursor: pointer; z-index: 500;
   display: flex; align-items: center; gap: .4rem;
   box-shadow: 0 4px 16px rgba(122,31,46,.35);
   transition: all .2s; font-family: var(--f-sans);
-  animation: fadeUp .4s 2s ease both; opacity: 0; z-index:1000;
+  animation: fadeUp .4s 2s ease both; opacity: 0;
 }
 .notif-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(122,31,46,.45); }
 .notif-btn.subscribed { background: var(--surface2); color: var(--ink-dim); box-shadow: none; border-radius: 50px; }
@@ -2106,6 +2107,17 @@ body.lecture-mode #read-progress { display: block; }
     background: transparent !important;
   }
 }
+
+@media (max-width: 768px) {
+  .articles-grid {
+    grid-template-columns: 1fr !important;
+    padding: 0 .75rem 7rem !important;
+    gap: .65rem !important;
+  }
+  .article-card {
+    padding: 1.2rem 1rem !important;
+  }
+}
 @keyframes fadeUp {
   from { opacity:0; transform:translateY(16px); }
   to   { opacity:1; transform:translateY(0); }
@@ -2257,6 +2269,12 @@ body.lecture-mode #read-progress { display: block; }
 }
 
 
+
+@media (max-width: 768px) {
+  .article-card {
+    min-height: 180px;
+  }
+}
 /* ── ANIMATION SCROLL CARTES ── */
 .article-card.card-anim { opacity: 0; transform: translateY(16px); }
 .article-card.card-anim.card-visible { opacity: 1; transform: translateY(0); transition: opacity .4s ease, transform .4s ease; }
@@ -3323,7 +3341,7 @@ function animateAndOpen(el, idx) {
       el.classList.remove('card-selected');
     }
     openArticle(idx);
-  }, 650);
+  }, 900);
 }
 
 async function openArticle(idx){
@@ -3822,7 +3840,7 @@ function toggleDark(){
     setTimeout(() => {
       splash.style.display = 'none';
       try { sessionStorage.setItem('splash-seen', '1'); } catch(e){}
-    }, 650);
+    }, 900);
   }, 2500);
 })();
 
