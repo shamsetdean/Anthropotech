@@ -113,7 +113,7 @@
   --ink:      #1a1f2e;
   --ink-mid:  #5a6478;
   --ink-dim:  #9aa0ae;
-  --line:     rgba(255,255,255,0.65);
+  --line:     rgba(26,31,46,0.12);
   --accent:   #7a1f2e;
   --accent2:  #4a6080;
   --glass-blur: blur(18px) saturate(1.5);
@@ -542,19 +542,28 @@ nav { display:none; }
 
 
 /* ── ANIMATION SÉLECTION ARTICLE ── */
-@keyframes cardSelect {
-  0%   { transform: scale(1); box-shadow: var(--glass-shadow); }
-  40%  { transform: scale(1.025); box-shadow: 0 16px 48px rgba(122,31,46,0.18), 0 4px 16px rgba(0,0,0,0.1); }
-  100% { transform: scale(1); }
+@keyframes cardRise {
+  0%   { transform: scale(1) translateY(0); box-shadow: var(--glass-shadow); }
+  35%  { transform: scale(1.04) translateY(-8px); box-shadow: 0 24px 60px rgba(122,31,46,0.22), 0 8px 20px rgba(0,0,0,0.12); }
+  100% { transform: scale(1) translateY(0); box-shadow: var(--glass-shadow); }
+}
+@keyframes cardSink {
+  0%   { transform: translateY(0) scale(1); }
+  35%  { transform: translateY(6px) scale(0.97); }
+  100% { transform: translateY(0) scale(1); }
 }
 .articles-grid.selecting .article-card {
-  opacity: .45; filter: blur(0.5px);
-  transition: opacity .3s ease, filter .3s ease;
+  opacity: .38;
+  filter: blur(0.8px);
+  animation: cardSink .4s cubic-bezier(.4,0,.2,1) both;
+  transition: opacity .25s ease;
+  pointer-events: none;
 }
 .articles-grid.selecting .article-card.card-selected {
   opacity: 1; filter: none;
-  animation: cardSelect .45s cubic-bezier(.34,1.56,.64,1) both;
+  animation: cardRise .45s cubic-bezier(.34,1.56,.64,1) both;
   z-index: 10; position: relative;
+  pointer-events: auto;
 }
 /* ── HIGHLIGHT RECHERCHE ── */
 .hl-match { background: rgba(122,31,46,.13); border-radius: 2px; padding: 0 1px; font-style: normal; }
@@ -746,6 +755,8 @@ nav { display:none; }
   font-size: 1.0625rem;
   color: var(--ink-mid);
   line-height: 1.8;
+  word-break: break-word;
+  overflow-wrap: break-word;
   text-align: justify;
   padding-top: 1.5rem;
   -webkit-user-select: none;
@@ -755,6 +766,8 @@ nav { display:none; }
 }
 
 /* Drop cap sur le premier paragraphe */
+.article-full-body a { color:var(--accent); text-decoration:underline; word-break:break-all; overflow-wrap:break-word; }
+
 .article-full-body .article-first-p::first-letter {
   font-family: var(--f-serif);
   font-size: 4.2rem;
@@ -771,6 +784,8 @@ nav { display:none; }
   margin-bottom: 0.9rem;
   color: var(--ink-mid);
   line-height: 1.8;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Titres de section, marqués mais pas aérés */
@@ -838,14 +853,18 @@ nav { display:none; }
 /* Blockquote, encadré élégant */
 .article-full-body .art-bq {
   border-left: 2px solid var(--accent);
-  padding: 0.6rem 1.2rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.75rem 1.2rem;
   margin: 1.2rem 0;
-  background: var(--surface);
+  background: rgba(255,255,255,0.42);
+  backdrop-filter: blur(8px);
   font-family: var(--f-serif);
   font-style: italic;
   color: var(--ink-mid);
   font-size: 1.05rem;
   line-height: 1.5;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Séparateur */
@@ -2018,6 +2037,15 @@ body.lecture-mode #read-progress { display: block; }
   .topbar-signature { padding: 10px 1rem; justify-content: center; }
 }
 
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .articles-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .article-full-wrap { padding: 2rem 2rem 4rem; }
+  .stats-wrap { padding: 2rem; }
+  .about-wrap { padding: 2rem; }
+  .hero { padding: 3rem 2rem 2rem; }
+  .cat-strip { padding: .75rem 1rem; }
+}
 @media (min-width: 769px) {
   .dock-bar { display: none !important; }
   .dock-expanded-menu { display: none !important; }
@@ -2050,7 +2078,7 @@ body.lecture-mode #read-progress { display: block; }
   :root {
     --bg:       #0f1117; --surface:  rgba(30,37,51,0.6); --surface2: rgba(20,25,38,0.5);
     --ink:      #e8e4dd; --ink-mid:  #8b95a8; --ink-dim:  #4a5568;
-    --line:     rgba(255,255,255,0.08); --accent: #b5394d; --accent2: #5d7fa3;
+    --line:     rgba(255,255,255,0.10); --accent: #b5394d; --accent2: #5d7fa3;
     --glass-border: rgba(255,255,255,0.10);
     --glass-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2);
   }
@@ -2070,7 +2098,7 @@ body.lecture-mode #read-progress { display: block; }
 [data-theme="dark"] {
   --bg:#0f1117; --surface:rgba(30,37,51,0.6); --surface2:rgba(20,25,38,0.5);
   --ink:#e8e4dd; --ink-mid:#8b95a8; --ink-dim:#4a5568;
-  --line:rgba(255,255,255,0.08); --accent:#b5394d; --accent2:#5d7fa3;
+  --line:rgba(255,255,255,0.10); --accent:#b5394d; --accent2:#5d7fa3;
   --glass-border:rgba(255,255,255,0.10);
   --glass-shadow:0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2);
 }
@@ -2246,6 +2274,23 @@ body.lecture-mode #read-progress { display: block; }
 .dock-menu-full .dock-menu-icon { background:rgba(122,31,46,0.28); }
 .dock-menu-label { font-size:.65rem; letter-spacing:.08em; text-transform:uppercase; flex:1; }
 .dock-menu-arrow { font-size:.7rem; opacity:.3; }
+
+.dock-social-row {
+  grid-column: 1 / -1;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; padding: 6px 4px 2px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin-top: 2px;
+}
+.dock-social-btn {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex; align-items: center; justify-content: center;
+  color: rgba(232,228,221,0.5); text-decoration: none;
+  transition: all .18s;
+}
+.dock-social-btn:hover { background: rgba(255,255,255,0.14); color: rgba(232,228,221,0.9); }
 .dock-menu-full .dock-menu-arrow { color:rgba(181,57,77,0.6); opacity:1; }
 </style>
 
@@ -2830,10 +2875,17 @@ body.lecture-mode #read-progress { display: block; }
     <span class="dock-menu-label">À propos</span>
     <span class="dock-menu-arrow">→</span>
   </button>
+  <div class="dock-social-row">
+    <a href="https://www.linkedin.com/in/shamsguettaf/" target="_blank" rel="noopener" class="dock-social-btn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="https://github.com/shamsetdean" target="_blank" rel="noopener" class="dock-social-btn" aria-label="GitHub"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+    <a href="https://x.com/shamsetdean" target="_blank" rel="noopener" class="dock-social-btn" aria-label="X"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+    <a href="https://www.instagram.com/shamsetdean" target="_blank" rel="noopener" class="dock-social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+    <a href="https://www.facebook.com/shamsetdean" target="_blank" rel="noopener" class="dock-social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+  </div>
 </div>
 
 <!-- DOCK BAR -->
-<nav class="dock-bar" id="bottom-nav" role="navigation" aria-label="Navigation principale">
+<nav class="dock-bar" id="dock-bar-mobile" role="navigation" aria-label="Navigation mobile">
   <button class="dock-btn" onclick="showView('home')" aria-label="Accueil" title="Accueil">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="20" height="20"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
   </button>
@@ -3045,8 +3097,8 @@ function renderArticles(articles){
   setGridMode(gridMode);
   if(!filtered.length){grid.innerHTML='<div class="empty-state"><strong>Aucun article pour l\'instant</strong>Les articles apparaîtront ici.</div>';return;}
   grid.innerHTML=filtered.map((a,i)=>`
-    <div class="article-card" onclick="animateAndOpen(this, ${allArticles.indexOf(a)})" style="animation-delay:${i*.06}s" role="listitem" tabindex="0" aria-label="${a.titre}" data-idx="${allArticles.indexOf(a)}"><span class="card-num">${String(allArticles.indexOf(a)+1).padStart(2,'0')}</span>
-      <span class="article-card-num">${String(i+1).padStart(2,'0')}</span>
+    <div class="article-card" onclick="animateAndOpen(this, ${allArticles.indexOf(a)})" style="animation-delay:${i*.06}s" role="listitem" tabindex="0" aria-label="${a.titre}" data-idx="${allArticles.indexOf(a)}"><span class="card-num">${String(allArticles.length - allArticles.indexOf(a)).padStart(2,'0')}</span>
+      <span class="article-card-num">${String(allArticles.length - allArticles.indexOf(a)).padStart(2,'0')}</span>
       <button type="button" class="fav-btn" onclick="toggleFavorite(event, '${a.id||a._id}')" aria-label="Favori">${favorites.includes(a.id||a._id)?'♥':'♡'}</button>
       <div class="article-cat">${catLabels[a.categorie]||a.categorie}</div>
       <div class="article-title">${hlSearch(formatTitle(a.titre))}</div>
