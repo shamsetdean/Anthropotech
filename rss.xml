@@ -1,190 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-  <title>Hum{i}An · Anthropotech Lab</title>
-  <link>https://shamsetdean.github.io/humiAn/</link>
-  <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
-  <language>fr-FR</language>
-  <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
-  <item>
-    <title><![CDATA[Les IA ne se valent pas. Et c'est une bonne nouvelle.]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=ia-pas-toutes-pareilles</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=ia-pas-toutes-pareilles</guid>
-    <pubDate>Invalid Date</pubDate>
-    <category>Tech</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[La question « quelle est la meilleure IA » est mal posée. Ce que les usages réels révèlent, c'est que le bon outil dépend entièrement de la tâche. Et aucun comparatif généraliste ne peut honnêtement trancher.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Le Parlement européen ferme la porte aux visuels IA]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=europe-interdit-visuels-ia</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=europe-interdit-visuels-ia</guid>
-    <pubDate>Invalid Date</pubDate>
-    <category>Tech</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Commission, Conseil, Parlement : les trois institutions européennes s'alignent pour bannir les visuels entièrement générés par IA de leur communication officielle. Un choix qui tranche avec ce qui se pratique ailleurs.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Les kits DarkSword et Coruna fissurent la forteresse iPhone]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=darksword-coruna-iphone</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=darksword-coruna-iphone</guid>
-    <pubDate>Invalid Date</pubDate>
-    <category>Tech</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Les fuites récentes de DarkSword et Coruna exposent une réalité brutale. Ces kits d'exploitation iOS, tombés entre toutes les mains depuis fin mars 2026, transforment des armes d'élite en outils du commun des pirates. L'iPhone perd son aura d'invincibilité.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[L'IA qui flatte trop nous rend elle plus égoïstes ?]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=ia-flatterie-stanford</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=ia-flatterie-stanford</guid>
-    <pubDate>Sat, 28 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Hum{i}An</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Une étude Stanford publiée dans Science révèle que les assistants IA valident les comportements des utilisateurs 49 % plus souvent que les humains, même face à des mensonges ou des actions nuisibles. Un biais qui remodèle notre rapport à l'erreur, à l'autre, et à la vérité.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Gérer son image sur les réseaux sociaux : mon atelier de 2016 reste d'actualité en 2026]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=image-reseaux-sociaux-2016-2026</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=image-reseaux-sociaux-2016-2026</guid>
-    <pubDate>Fri, 27 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Hum{i}An</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[En 2016, j'animais un atelier sur l'image numérique. Les recruteurs scrutaient déjà Facebook. Dix ans plus tard, Meta est condamné à des milliards. Ce que je pressentais alors tombe désormais sous le sens.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Google lance Gemini sur Mac : la contre-attaque tant attendue]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=gemini-mac-contre-attaque</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=gemini-mac-contre-attaque</guid>
-    <pubDate>Thu, 26 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Apple</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Depuis le 19 mars 2026, une bêta privée de Gemini circule sur Mac. ChatGPT et Claude déjà natifs, Siri en retard. Apple emprunte l'IA de Google. La guerre des IA sur Mac est ouverte.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[L'IA pour PME : réfléchissez avant de cliquer]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=ia-pme-avant-cliquer</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=ia-pme-avant-cliquer</guid>
-    <pubDate>Wed, 25 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Hum{i}An</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Sans cap précis, l'IA draine trésorerie et énergie. Mesurez vos victoires ou passez votre tour. Cumul de microgains, zéro illusion.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Le procès des écrans : Meta confronté à ses plateformes]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=proces-ecrans-algorithmes</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=proces-ecrans-algorithmes</guid>
-    <pubDate>Wed, 25 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Hum{i}An</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Le 25 mars 2026, un tribunal du Nouveau-Mexique a condamné Meta à 375 millions de dollars pour mise en danger de mineurs. Une décision historique qui interroge la conception des plateformes — et la responsabilité des foyers.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Adobe Firefly Custom : ton style, ton IA, mais à qui appartient le résultat ?]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=adobe-firefly-custom-identite</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=adobe-firefly-custom-identite</guid>
-    <pubDate>Tue, 24 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Hum{i}An</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Adobe permet d'entraîner une IA sur tes propres créations. Gain de productivité évident. Mais quand la génération devient plus rapide que le raisonnement, à qui appartient vraiment le résultat ?]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Windows, macOS, Linux — Trois visions du même métier]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=windows-macos-linux</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=windows-macos-linux</guid>
-    <pubDate>Tue, 24 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Tech</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Choisir un système d'exploitation revient à trancher entre trois philosophies de travail. Windows impose sa polyvalence universelle. macOS mise sur une cohérence absolue. Linux offre une liberté totale, quitte à exiger de la patience.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Firefox 2026 : reprendre le contrôle du web]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=firefox-2026-controle-web</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=firefox-2026-controle-web</guid>
-    <pubDate>Mon, 23 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Tech</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Firefox défend une idée simple : laisser l'utilisateur décider. VPN intégré gratuit, Smart Window, API Sanitizer, vue fractionnée. En 2026, reprendre le contrôle de sa navigation n'est pas un luxe.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Et si les applications disparaissaient ?]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=apps-disparaissent-carl-pei</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=apps-disparaissent-carl-pei</guid>
-    <pubDate>Sun, 22 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Apple</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Pour Carl Pei, fondateur de Nothing, le smartphone de demain n'aura plus besoin d'icônes ni d'App Store. Une vision audacieuse qui séduit autant qu'elle interroge.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[WordPress libère le développement local]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=wordpress-playground</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=wordpress-playground</guid>
-    <pubDate>Sat, 21 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Tech</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[my.wordpress.net ouvre un WordPress complet dans le navigateur, sans installation. Lancé le 10 mars 2026, il repose sur WebAssembly. Idéal pour prototyper, pas pour déployer.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[La DGFiP plaque Microsoft : Linux sur 95 000 postes]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=dgfip-linux</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=dgfip-linux</guid>
-    <pubDate>Fri, 20 Mar 2026 23:00:00 GMT</pubDate>
-    <category>OS</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[La DGFiP abandonne Windows pour Linux sur tous ses postes. Une claque magistrale aux géants de Redmond, et ça tombe à pic.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Les 11 commandements de l'entretien]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=11-commandements-entretien</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=11-commandements-entretien</guid>
-    <pubDate>Thu, 19 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Hum{i}An</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Un entretien d'embauche n'est pas un examen. C'est une rencontre entre deux personnes qui vérifient si elles peuvent avancer ensemble. Onze conseils concrets pour arrêter de vous saboter.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[OBS : le couteau suisse de la diffusion en direct]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=obs-streaming</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=obs-streaming</guid>
-    <pubDate>Thu, 19 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Tech</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Gratuit, puissant, open-source. OBS est le logiciel qui transforme votre PC en regie televisuelle , que vous streamiez un conseil municipal ou une partie de jeu video.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Intelligence artificielle et données personnelles : avons-nous vraiment consenti ?]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=ia-donnees-consentement</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=ia-donnees-consentement</guid>
-    <pubDate>Wed, 18 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Hum{i}An</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[L'IA ne fonctionne pas a l'electricite seule. Son carburant, ce sont nos données. Mais avons-nous reellement choisi de participer a ce système ?]]></description>
-  </item>
-  <item>
-    <title><![CDATA[ChatGPT et Service Public : ne pas subir, mais maitriser]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=chatgpt-service-public</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=chatgpt-service-public</guid>
-    <pubDate>Tue, 17 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Hum{i}An</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[L'arrivee de ChatGPT dans les collectivites n'est pas un simple outil en plus. C'est un changement de culture. La vraie question n'est pas : faut-il l'utiliser ? Mais comment l'utiliser intelligemment.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[La malhonnetete intellectuelle : quand le raccourci devient manipulation]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=malhonnetete-intellectuelle</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=malhonnetete-intellectuelle</guid>
-    <pubDate>Mon, 16 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Hum{i}An</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Dans nos sociétés saturees d'informations, certains preferent les raccourcis cognitifs a la rigueur. Ce n'est pas qu'un problème de moralite. C'est un rapport complexe au pouvoir.]]></description>
-  </item>
-  <item>
-    <title><![CDATA[Anthropic Skilljar : la plateforme gratuite pour maîtriser Claude AI]]></title>
-    <link>https://shamsetdean.github.io/humiAn/?article=anthropic-skilljar-formation</link>
-    <guid>https://shamsetdean.github.io/humiAn/?article=anthropic-skilljar-formation</guid>
-    <pubDate>Sun, 15 Mar 2026 23:00:00 GMT</pubDate>
-    <category>Tech</category>
-    <author>shamsetdean@gmail.com (Shams & Dean)</author>
-    <description><![CDATA[Anthropic lance Skilljar, une plateforme d'apprentissage gratuite avec cours interactifs et certificats officiels pour maîtriser Claude AI, ses APIs et le protocole MCP.]]></description>
-  </item>
-</channel>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Anthropotech · Lab</title>
+    <link>https://shamsetdean.github.io/humiAn/</link>
+    <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
+    <language>fr-FR</language>
+    <lastBuildDate>Sat, 11 Apr 2026 08:02:29 +0000</lastBuildDate>
+    <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
+    <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
+    <managingEditor>Shams &amp; Dean</managingEditor>
+    <category>Technologie</category>
+    <category>Numérique</category>
+    <ttl>1440</ttl>
+    <item>
+      <title>Les 7 outils open source essentiels pour reprendre le contrôle de ses données en 2026</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=7-outils-open-source-confidentialite-2026</link>
+      <description>La vie privée n’est pas une posture. C’est une manière de garder la main sur ses données, ses échanges et ses usages numériques. Voici sept outils open source qui permettent de reprendre ce contrôle sans se raconter d’histoires.</description>
+      <pubDate>Sat, 11 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Humain</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=7-outils-open-source-confidentialite-2026</guid>
+    </item>
+    <item>
+      <title>Les IA ne se valent pas. Et c'est une bonne nouvelle.</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=ia-pas-toutes-pareilles</link>
+      <description>La question « quelle est la meilleure IA » est mal posée. Ce que les usages réels révèlent, c'est que le bon outil dépend entièrement de la tâche. Et aucun comparatif généraliste ne peut honnêtement trancher.</description>
+      <pubDate>Mon, 06 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=ia-pas-toutes-pareilles</guid>
+    </item>
+    <item>
+      <title>Le Parlement européen ferme la porte aux visuels IA</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=europe-interdit-visuels-ia</link>
+      <description>Commission, Conseil, Parlement : les trois institutions européennes s'alignent pour bannir les visuels entièrement générés par IA de leur communication officielle. Un choix qui tranche avec ce qui se pratique ailleurs.</description>
+      <pubDate>Fri, 03 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=europe-interdit-visuels-ia</guid>
+    </item>
+    <item>
+      <title>L'IA qui flatte trop nous rend elle plus égoïstes ?</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=ia-flatterie-stanford</link>
+      <description>Une étude Stanford publiée dans Science révèle que les assistants IA valident les comportements des utilisateurs 49 % plus souvent que les humains, même face à des mensonges ou des actions nuisibles. Un biais qui remodèle notre rapport à l'erreur, à l'autre, et à la vérité.</description>
+      <pubDate>Sun, 29 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=ia-flatterie-stanford</guid>
+    </item>
+    <item>
+      <title>Gérer son image sur les réseaux sociaux : mon atelier de 2016 reste d'actualité en 2026</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=image-reseaux-sociaux-2016-2026</link>
+      <description>En 2016, j'animais un atelier sur l'image numérique. Les recruteurs scrutaient déjà Facebook. Dix ans plus tard, Meta est condamné à des milliards. Ce que je pressentais alors tombe désormais sous le sens.</description>
+      <pubDate>Sat, 28 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=image-reseaux-sociaux-2016-2026</guid>
+    </item>
+    <item>
+      <title>Google lance Gemini sur Mac : la contre-attaque tant attendue</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=gemini-mac-contre-attaque</link>
+      <description>Depuis le 19 mars 2026, une bêta privée de Gemini circule sur Mac. ChatGPT et Claude déjà natifs, Siri en retard. Apple emprunte l'IA de Google. La guerre des IA sur Mac est ouverte.</description>
+      <pubDate>Fri, 27 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=gemini-mac-contre-attaque</guid>
+    </item>
+    <item>
+      <title>L'IA pour PME : réfléchissez avant de cliquer</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=ia-pme-avant-cliquer</link>
+      <description>Sans cap précis, l'IA draine trésorerie et énergie. Mesurez vos victoires ou passez votre tour. Cumul de microgains, zéro illusion.</description>
+      <pubDate>Thu, 26 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=ia-pme-avant-cliquer</guid>
+    </item>
+    <item>
+      <title>Le procès des écrans : Meta confronté à ses plateformes</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=proces-ecrans-algorithmes</link>
+      <description>Le 25 mars 2026, un tribunal du Nouveau-Mexique a condamné Meta à 375 millions de dollars pour mise en danger de mineurs. Une décision historique qui interroge la conception des plateformes — et la responsabilité des foyers.</description>
+      <pubDate>Thu, 26 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=proces-ecrans-algorithmes</guid>
+    </item>
+    <item>
+      <title>Adobe Firefly Custom : ton style, ton IA, mais à qui appartient le résultat ?</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=adobe-firefly-custom-identite</link>
+      <description>Adobe permet d'entraîner une IA sur tes propres créations. Gain de productivité évident. Mais quand la génération devient plus rapide que le raisonnement, à qui appartient vraiment le résultat ?</description>
+      <pubDate>Wed, 25 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=adobe-firefly-custom-identite</guid>
+    </item>
+    <item>
+      <title>Windows, macOS, Linux — Trois visions du même métier</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=windows-macos-linux</link>
+      <description>Choisir un système d'exploitation revient à trancher entre trois philosophies de travail. Windows impose sa polyvalence universelle. macOS mise sur une cohérence absolue. Linux offre une liberté totale, quitte à exiger de la patience.</description>
+      <pubDate>Wed, 25 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=windows-macos-linux</guid>
+    </item>
+    <item>
+      <title>Firefox 2026 : reprendre le contrôle du web</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=firefox-2026-controle-web</link>
+      <description>Firefox défend une idée simple : laisser l'utilisateur décider. VPN intégré gratuit, Smart Window, API Sanitizer, vue fractionnée. En 2026, reprendre le contrôle de sa navigation n'est pas un luxe.</description>
+      <pubDate>Tue, 24 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=firefox-2026-controle-web</guid>
+    </item>
+    <item>
+      <title>Et si les applications disparaissaient ?</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=apps-disparaissent-carl-pei</link>
+      <description>Pour Carl Pei, fondateur de Nothing, le smartphone de demain n'aura plus besoin d'icônes ni d'App Store. Une vision audacieuse qui séduit autant qu'elle interroge.</description>
+      <pubDate>Mon, 23 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=apps-disparaissent-carl-pei</guid>
+    </item>
+    <item>
+      <title>WordPress libère le développement local</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=wordpress-playground</link>
+      <description>my.wordpress.net ouvre un WordPress complet dans le navigateur, sans installation. Lancé le 10 mars 2026, il repose sur WebAssembly. Idéal pour prototyper, pas pour déployer.</description>
+      <pubDate>Sun, 22 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=wordpress-playground</guid>
+    </item>
+    <item>
+      <title>La DGFiP plaque Microsoft : Linux sur 95 000 postes</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=dgfip-linux</link>
+      <description>La DGFiP abandonne Windows pour Linux sur tous ses postes. Une claque magistrale aux géants de Redmond, et ça tombe à pic.</description>
+      <pubDate>Sat, 21 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=dgfip-linux</guid>
+    </item>
+    <item>
+      <title>Les 11 commandements de l'entretien</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=11-commandements-entretien</link>
+      <description>Un entretien d'embauche n'est pas un examen. C'est une rencontre entre deux personnes qui vérifient si elles peuvent avancer ensemble. Onze conseils concrets pour arrêter de vous saboter.</description>
+      <pubDate>Fri, 20 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=11-commandements-entretien</guid>
+    </item>
+    <item>
+      <title>OBS : le couteau suisse de la diffusion en direct</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=obs-streaming</link>
+      <description>Gratuit, puissant, open-source. OBS est le logiciel qui transforme votre PC en regie televisuelle , que vous streamiez un conseil municipal ou une partie de jeu video.</description>
+      <pubDate>Fri, 20 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=obs-streaming</guid>
+    </item>
+    <item>
+      <title>Intelligence artificielle et données personnelles : avons-nous vraiment consenti ?</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=ia-donnees-consentement</link>
+      <description>L'IA ne fonctionne pas a l'electricite seule. Son carburant, ce sont nos données. Mais avons-nous reellement choisi de participer a ce système ?</description>
+      <pubDate>Thu, 19 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=ia-donnees-consentement</guid>
+    </item>
+    <item>
+      <title>ChatGPT et Service Public : ne pas subir, mais maitriser</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=chatgpt-service-public</link>
+      <description>L'arrivee de ChatGPT dans les collectivites n'est pas un simple outil en plus. C'est un changement de culture. La vraie question n'est pas : faut-il l'utiliser ? Mais comment l'utiliser intelligemment.</description>
+      <pubDate>Wed, 18 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=chatgpt-service-public</guid>
+    </item>
+    <item>
+      <title>La malhonnetete intellectuelle : quand le raccourci devient manipulation</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=malhonnetete-intellectuelle</link>
+      <description>Dans nos sociétés saturees d'informations, certains preferent les raccourcis cognitifs a la rigueur. Ce n'est pas qu'un problème de moralite. C'est un rapport complexe au pouvoir.</description>
+      <pubDate>Tue, 17 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=malhonnetete-intellectuelle</guid>
+    </item>
+    <item>
+      <title>Anthropic Skilljar : la plateforme gratuite pour maîtriser Claude AI</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=anthropic-skilljar-formation</link>
+      <description>Anthropic lance Skilljar, une plateforme d'apprentissage gratuite avec cours interactifs et certificats officiels pour maîtriser Claude AI, ses APIs et le protocole MCP.</description>
+      <pubDate>Mon, 16 Mar 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=anthropic-skilljar-formation</guid>
+    </item>
+  </channel>
 </rss>
