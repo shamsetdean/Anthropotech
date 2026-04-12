@@ -5,13 +5,22 @@
     <link>https://shamsetdean.github.io/humiAn/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Sat, 11 Apr 2026 08:09:03 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 15:01:19 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams &amp; Dean</managingEditor>
     <category>Technologie</category>
     <category>Numérique</category>
     <ttl>1440</ttl>
+    <item>
+      <title>Claude Mythos, la peur et le bruit</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=claude-mythos-peur-bruit</link>
+      <description>Chaque avancée en cybersécurité par IA déclenche aussitôt un récit de catastrophe. Le dossier Mythos d'Anthropic illustre comment la puissance technique, la communication d'entreprise et la lecture médiatique se percutent sans produire de clarté.</description>
+      <pubDate>Sun, 12 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=claude-mythos-peur-bruit</guid>
+    </item>
     <item>
       <title>Les IA ne se valent pas. Et c'est une bonne nouvelle.</title>
       <link>https://shamsetdean.github.io/humiAn/?article=ia-pas-toutes-pareilles</link>
@@ -182,15 +191,6 @@
       <author>Shams &amp; Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=anthropic-skilljar-formation</guid>
-    </item>
-    <item>
-      <title>Claude Code : les leviers essentiels pour coder en 2026</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=claude-code-leviers-2026</link>
-      <description>Claude Code dépasse la génération de texte grâce à des outils dédiés : autorisations MCP, modes Plan et Thinking, fichiers Claude.md hiérarchiques et crochets de protection.</description>
-      <pubDate>Sun, 15 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=claude-code-leviers-2026</guid>
     </item>
   </channel>
 </rss>

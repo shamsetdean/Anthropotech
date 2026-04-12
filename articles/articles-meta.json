@@ -1,5 +1,13 @@
 [
   {
+    "id": "claude-mythos-peur-bruit",
+    "titre": "Claude Mythos, la peur et le bruit",
+    "resume": "Chaque avancée en cybersécurité par IA déclenche aussitôt un récit de catastrophe. Le dossier Mythos d'Anthropic illustre comment la puissance technique, la communication d'entreprise et la lecture médiatique se percutent sans produire de clarté.",
+    "categorie": "tech",
+    "date": "12 avril 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "ia-pas-toutes-pareilles",
     "titre": "Les IA ne se valent pas. Et c'est une bonne nouvelle.",
     "resume": "La question « quelle est la meilleure IA » est mal posée. Ce que les usages réels révèlent, c'est que le bon outil dépend entièrement de la tâche. Et aucun comparatif généraliste ne peut honnêtement trancher.",
