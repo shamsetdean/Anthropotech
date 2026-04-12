@@ -1,9 +1,9 @@
 {
-  "name": "Anthropotech — Magazine",
-  "short_name": "Anthropotech",
+  "name": "hum{i}An · Anthropotech Lab",
+  "short_name": "hum{i}An",
   "description": "Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.",
-  "start_url": "/Anthropotech/",
-  "scope": "/Anthropotech/",
+  "start_url": "/humiAn/",
+  "scope": "/humiAn/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#f5f3ef",
