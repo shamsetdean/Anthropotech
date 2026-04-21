@@ -1,5 +1,13 @@
 [
   {
+    "id": "app-store-renaissance-ia-2026",
+    "titre": "L'App Store renaît grâce à l'IA",
+    "resume": "Après des années de stagnation, l'App Store connaît une croissance inédite tirée par les outils de génération de code par IA. 600 000 nouvelles applications en un an, 80% de hausse au premier trimestre 2026. Une opportunité réelle, avec des risques tout aussi réels.",
+    "categorie": "apple",
+    "date": "19 avril 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "perplexity-personal-computer-mac-agent",
     "titre": "Perplexity veut transformer le Mac en agent IA",
     "resume": "Perplexity lance Personal Computer sur Mac : un agent IA capable d'agir sur le système, pas seulement de répondre. Une évolution qui pose autant de questions qu'elle apporte de promesses.",

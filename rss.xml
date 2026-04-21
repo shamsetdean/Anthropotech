@@ -5,13 +5,22 @@
     <link>https://shamsetdean.github.io/humiAn/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Sun, 19 Apr 2026 08:28:04 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 05:48:05 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams &amp; Dean</managingEditor>
     <category>Technologie</category>
     <category>Numérique</category>
     <ttl>1440</ttl>
+    <item>
+      <title>L'App Store renaît grâce à l'IA</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=app-store-renaissance-ia-2026</link>
+      <description>Après des années de stagnation, l'App Store connaît une croissance inédite tirée par les outils de génération de code par IA. 600 000 nouvelles applications en un an, 80% de hausse au premier trimestre 2026. Une opportunité réelle, avec des risques tout aussi réels.</description>
+      <pubDate>Sun, 19 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=app-store-renaissance-ia-2026</guid>
+    </item>
     <item>
       <title>Perplexity veut transformer le Mac en agent IA</title>
       <link>https://shamsetdean.github.io/humiAn/?article=perplexity-personal-computer-mac-agent</link>
@@ -182,15 +191,6 @@
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=chatgpt-service-public</guid>
-    </item>
-    <item>
-      <title>La malhonnetete intellectuelle : quand le raccourci devient manipulation</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=malhonnetete-intellectuelle</link>
-      <description>Dans nos sociétés saturees d'informations, certains preferent les raccourcis cognitifs a la rigueur. Ce n'est pas qu'un problème de moralite. C'est un rapport complexe au pouvoir.</description>
-      <pubDate>Tue, 17 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Hum{i}An</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=malhonnetete-intellectuelle</guid>
     </item>
   </channel>
 </rss>
