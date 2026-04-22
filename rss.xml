@@ -5,7 +5,7 @@
     <link>https://shamsetdean.github.io/humiAn/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 22 Apr 2026 19:50:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 19:52:10 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams &amp; Dean</managingEditor>
@@ -29,6 +29,15 @@
       <author>Shams &amp; Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=bornes-electriques-autoroutes-france-2035</guid>
+    </item>
+    <item>
+      <title>Gucci x Google : quand le luxe embarque l'IA</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=gucci-google-lunettes-connectees-android-xr</link>
+      <description>Google et Gucci s'associent pour des lunettes connectées sous Android XR intégrant l'IA Gemini, attendues en 2027. Moins de 50 grammes, caméras et microphones discrets, positionnement premium face aux Ray-Ban de Meta. Le pari est précis : rendre le wearable invisible.</description>
+      <pubDate>Sun, 19 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=gucci-google-lunettes-connectees-android-xr</guid>
     </item>
     <item>
       <title>Perplexity veut transformer le Mac en agent IA</title>
@@ -182,15 +191,6 @@
       <author>Shams &amp; Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=obs-streaming</guid>
-    </item>
-    <item>
-      <title>Intelligence artificielle et données personnelles : avons-nous vraiment consenti ?</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=ia-donnees-consentement</link>
-      <description>L'IA ne fonctionne pas a l'electricite seule. Son carburant, ce sont nos données. Mais avons-nous reellement choisi de participer a ce système ?</description>
-      <pubDate>Thu, 19 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Hum{i}An</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=ia-donnees-consentement</guid>
     </item>
   </channel>
 </rss>
