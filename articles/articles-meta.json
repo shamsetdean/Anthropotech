@@ -1,5 +1,13 @@
 [
   {
+    "id": "amazon-globalstar-rachat-satellite",
+    "titre": "Amazon rachète Globalstar : un raccourci industriel à 11,57 milliards",
+    "resume": "Amazon débourse 11,57 milliards de dollars pour acquérir Globalstar. Derrière le montant, une logique industrielle précise : récupérer des fréquences, des actifs et une base opérationnelle pour accélérer face à Starlink.",
+    "categorie": "tech",
+    "date": "19 avril 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "app-store-renaissance-ia-2026",
     "titre": "L'App Store renaît grâce à l'IA",
     "resume": "Après des années de stagnation, l'App Store connaît une croissance inédite tirée par les outils de génération de code par IA. 600 000 nouvelles applications en un an, 80% de hausse au premier trimestre 2026. Une opportunité réelle, avec des risques tout aussi réels.",
@@ -16,6 +24,14 @@
     "auteur": "Shams & Dean"
   },
   {
+    "id": "gemini-detection-ia-2026",
+    "titre": "Gemini écrit comme un humain : quand les détecteurs perdent leurs repères",
+    "resume": "En 2026, Gemini s'impose comme le modèle le plus difficile à identifier pour les détecteurs d'IA grand public. Taux de détection souvent inférieurs à 10% sur certains outils. Derrière la performance technique, une asymétrie inquiétante entre ceux qui produisent et ceux qui lisent.",
+    "categorie": "tech",
+    "date": "19 avril 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "gucci-google-lunettes-connectees-android-xr",
     "titre": "Gucci x Google : quand le luxe embarque l'IA",
     "resume": "Google et Gucci s'associent pour des lunettes connectées sous Android XR intégrant l'IA Gemini, attendues en 2027. Moins de 50 grammes, caméras et microphones discrets, positionnement premium face aux Ray-Ban de Meta. Le pari est précis : rendre le wearable invisible.",
@@ -24,9 +40,33 @@
     "auteur": "Shams & Dean"
   },
   {
+    "id": "inde-apple-aadhaar-preinstallation-abandon",
+    "titre": "L'Inde abandonne sa directive Aadhaar sur iPhone",
+    "resume": "Le gouvernement indien renonce à imposer la préinstallation de l'application Aadhaar sur les iPhone. Apple avait résisté depuis novembre 2025, invoquant la confidentialité des utilisateurs et l'architecture d'iOS. Un bras de fer qui illustre les limites de la coercition sur les plateformes fermées.",
+    "categorie": "apple",
+    "date": "19 avril 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
+    "id": "openai-restructuration-sora-departs-cadres-2026",
+    "titre": "OpenAI ferme Sora et perd trois cadres dirigeants",
+    "resume": "OpenAI ferme Sora, son application de génération vidéo qui coûtait environ 1 million de dollars par jour, et perd trois hauts cadres dont Bill Peebles, responsable du projet. Un recentrage assumé vers les solutions IA pour les entreprises, au détriment des démonstrateurs technologiques coûteux.",
+    "categorie": "tech",
+    "date": "19 avril 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "perplexity-personal-computer-mac-agent",
     "titre": "Perplexity veut transformer le Mac en agent IA",
     "resume": "Perplexity lance Personal Computer sur Mac : un agent IA capable d'agir sur le système, pas seulement de répondre. Une évolution qui pose autant de questions qu'elle apporte de promesses.",
+    "categorie": "tech",
+    "date": "19 avril 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
+    "id": "tablette-murale-ipad-android-domotique",
+    "titre": "Panneau mural domotique : iPad ou Android ?",
+    "resume": "iPad ou tablette Android comme panneau mural domotique ? Les deux options fonctionnent, mais pour des raisons différentes. Tour d'horizon des critères qui comptent vraiment : écosystème, budget, durabilité et flexibilité.",
     "categorie": "tech",
     "date": "19 avril 2026",
     "auteur": "Shams & Dean"

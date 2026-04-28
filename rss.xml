@@ -5,13 +5,22 @@
     <link>https://shamsetdean.github.io/humiAn/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 22 Apr 2026 19:52:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 11:25:18 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams &amp; Dean</managingEditor>
     <category>Technologie</category>
     <category>Numérique</category>
     <ttl>1440</ttl>
+    <item>
+      <title>Amazon rachète Globalstar : un raccourci industriel à 11,57 milliards</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=amazon-globalstar-rachat-satellite</link>
+      <description>Amazon débourse 11,57 milliards de dollars pour acquérir Globalstar. Derrière le montant, une logique industrielle précise : récupérer des fréquences, des actifs et une base opérationnelle pour accélérer face à Starlink.</description>
+      <pubDate>Sun, 19 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=amazon-globalstar-rachat-satellite</guid>
+    </item>
     <item>
       <title>L'App Store renaît grâce à l'IA</title>
       <link>https://shamsetdean.github.io/humiAn/?article=app-store-renaissance-ia-2026</link>
@@ -31,6 +40,15 @@
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=bornes-electriques-autoroutes-france-2035</guid>
     </item>
     <item>
+      <title>Gemini écrit comme un humain : quand les détecteurs perdent leurs repères</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=gemini-detection-ia-2026</link>
+      <description>En 2026, Gemini s'impose comme le modèle le plus difficile à identifier pour les détecteurs d'IA grand public. Taux de détection souvent inférieurs à 10% sur certains outils. Derrière la performance technique, une asymétrie inquiétante entre ceux qui produisent et ceux qui lisent.</description>
+      <pubDate>Sun, 19 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=gemini-detection-ia-2026</guid>
+    </item>
+    <item>
       <title>Gucci x Google : quand le luxe embarque l'IA</title>
       <link>https://shamsetdean.github.io/humiAn/?article=gucci-google-lunettes-connectees-android-xr</link>
       <description>Google et Gucci s'associent pour des lunettes connectées sous Android XR intégrant l'IA Gemini, attendues en 2027. Moins de 50 grammes, caméras et microphones discrets, positionnement premium face aux Ray-Ban de Meta. Le pari est précis : rendre le wearable invisible.</description>
@@ -40,6 +58,24 @@
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=gucci-google-lunettes-connectees-android-xr</guid>
     </item>
     <item>
+      <title>L'Inde abandonne sa directive Aadhaar sur iPhone</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=inde-apple-aadhaar-preinstallation-abandon</link>
+      <description>Le gouvernement indien renonce à imposer la préinstallation de l'application Aadhaar sur les iPhone. Apple avait résisté depuis novembre 2025, invoquant la confidentialité des utilisateurs et l'architecture d'iOS. Un bras de fer qui illustre les limites de la coercition sur les plateformes fermées.</description>
+      <pubDate>Sun, 19 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=inde-apple-aadhaar-preinstallation-abandon</guid>
+    </item>
+    <item>
+      <title>OpenAI ferme Sora et perd trois cadres dirigeants</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=openai-restructuration-sora-departs-cadres-2026</link>
+      <description>OpenAI ferme Sora, son application de génération vidéo qui coûtait environ 1 million de dollars par jour, et perd trois hauts cadres dont Bill Peebles, responsable du projet. Un recentrage assumé vers les solutions IA pour les entreprises, au détriment des démonstrateurs technologiques coûteux.</description>
+      <pubDate>Sun, 19 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=openai-restructuration-sora-departs-cadres-2026</guid>
+    </item>
+    <item>
       <title>Perplexity veut transformer le Mac en agent IA</title>
       <link>https://shamsetdean.github.io/humiAn/?article=perplexity-personal-computer-mac-agent</link>
       <description>Perplexity lance Personal Computer sur Mac : un agent IA capable d'agir sur le système, pas seulement de répondre. Une évolution qui pose autant de questions qu'elle apporte de promesses.</description>
@@ -47,6 +83,15 @@
       <author>Shams &amp; Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=perplexity-personal-computer-mac-agent</guid>
+    </item>
+    <item>
+      <title>Panneau mural domotique : iPad ou Android ?</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=tablette-murale-ipad-android-domotique</link>
+      <description>iPad ou tablette Android comme panneau mural domotique ? Les deux options fonctionnent, mais pour des raisons différentes. Tour d'horizon des critères qui comptent vraiment : écosystème, budget, durabilité et flexibilité.</description>
+      <pubDate>Sun, 19 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=tablette-murale-ipad-android-domotique</guid>
     </item>
     <item>
       <title>Claude Mythos, la peur et le bruit</title>
@@ -146,51 +191,6 @@
       <author>Shams &amp; Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=firefox-2026-controle-web</guid>
-    </item>
-    <item>
-      <title>Et si les applications disparaissaient ?</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=apps-disparaissent-carl-pei</link>
-      <description>Pour Carl Pei, fondateur de Nothing, le smartphone de demain n'aura plus besoin d'icônes ni d'App Store. Une vision audacieuse qui séduit autant qu'elle interroge.</description>
-      <pubDate>Mon, 23 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>OS</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=apps-disparaissent-carl-pei</guid>
-    </item>
-    <item>
-      <title>WordPress libère le développement local</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=wordpress-playground</link>
-      <description>my.wordpress.net ouvre un WordPress complet dans le navigateur, sans installation. Lancé le 10 mars 2026, il repose sur WebAssembly. Idéal pour prototyper, pas pour déployer.</description>
-      <pubDate>Sun, 22 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=wordpress-playground</guid>
-    </item>
-    <item>
-      <title>La DGFiP plaque Microsoft : Linux sur 95 000 postes</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=dgfip-linux</link>
-      <description>La DGFiP abandonne Windows pour Linux sur tous ses postes. Une claque magistrale aux géants de Redmond, et ça tombe à pic.</description>
-      <pubDate>Sat, 21 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>OS</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=dgfip-linux</guid>
-    </item>
-    <item>
-      <title>Les 11 commandements de l'entretien</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=11-commandements-entretien</link>
-      <description>Un entretien d'embauche n'est pas un examen. C'est une rencontre entre deux personnes qui vérifient si elles peuvent avancer ensemble. Onze conseils concrets pour arrêter de vous saboter.</description>
-      <pubDate>Fri, 20 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Hum{i}An</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=11-commandements-entretien</guid>
-    </item>
-    <item>
-      <title>OBS : le couteau suisse de la diffusion en direct</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=obs-streaming</link>
-      <description>Gratuit, puissant, open-source. OBS est le logiciel qui transforme votre PC en regie televisuelle , que vous streamiez un conseil municipal ou une partie de jeu video.</description>
-      <pubDate>Fri, 20 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=obs-streaming</guid>
     </item>
   </channel>
 </rss>
