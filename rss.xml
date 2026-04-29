@@ -5,13 +5,22 @@
     <link>https://shamsetdean.github.io/humiAn/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 29 Apr 2026 05:43:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2026 05:48:55 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams &amp; Dean</managingEditor>
     <category>Technologie</category>
     <category>Numérique</category>
     <ttl>1440</ttl>
+    <item>
+      <title>Le "Likez, commentez, repostez" : radiographie d'un réflexe devenu compulsion</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=likez-commentez-repostez</link>
+      <description>Liker, commenter, reposer sur commande : derrière ces gestes anodins se cachent des mécanismes de dopamine, de conformité sociale et de dark patterns d'engagement soigneusement conçus. Étude sociologique et psychologique d'un réflexe devenu compulsion.</description>
+      <pubDate>Wed, 29 Apr 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Hum{i}An</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=likez-commentez-repostez</guid>
+    </item>
     <item>
       <title>Amazon rachète Globalstar : un raccourci industriel à 11,57 milliards</title>
       <link>https://shamsetdean.github.io/humiAn/?article=amazon-globalstar-rachat-satellite</link>
@@ -182,15 +191,6 @@
       <author>Shams &amp; Dean</author>
       <category>Tech</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=windows-macos-linux</guid>
-    </item>
-    <item>
-      <title>Firefox 2026 : reprendre le contrôle du web</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=firefox-2026-controle-web</link>
-      <description>Firefox défend une idée simple : laisser l'utilisateur décider. VPN intégré gratuit, Smart Window, API Sanitizer, vue fractionnée. En 2026, reprendre le contrôle de sa navigation n'est pas un luxe.</description>
-      <pubDate>Tue, 24 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=firefox-2026-controle-web</guid>
     </item>
   </channel>
 </rss>

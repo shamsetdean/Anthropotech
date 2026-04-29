@@ -1,5 +1,13 @@
 [
   {
+    "id": "likez-commentez-repostez",
+    "titre": "Le \"Likez, commentez, repostez\" : radiographie d'un réflexe devenu compulsion",
+    "resume": "Liker, commenter, reposer sur commande : derrière ces gestes anodins se cachent des mécanismes de dopamine, de conformité sociale et de dark patterns d'engagement soigneusement conçus. Étude sociologique et psychologique d'un réflexe devenu compulsion.",
+    "categorie": "humian",
+    "date": "29 avril 2026",
+    "auteur": "Shams & Dean"
+  },
+  {
     "id": "amazon-globalstar-rachat-satellite",
     "titre": "Amazon rachète Globalstar : un raccourci industriel à 11,57 milliards",
     "resume": "Amazon débourse 11,57 milliards de dollars pour acquérir Globalstar. Derrière le montant, une logique industrielle précise : récupérer des fréquences, des actifs et une base opérationnelle pour accélérer face à Starlink.",
@@ -429,14 +437,6 @@
     "resume": "Les fuites récentes de DarkSword et Coruna exposent une réalité brutale. Ces kits d'exploitation iOS, tombés entre toutes les mains depuis fin mars 2026, transforment des armes d'élite en outils du commun des pirates. L'iPhone perd son aura d'invincibilité.",
     "categorie": "tech",
     "date": "1er avril 2026",
-    "auteur": "Shams & Dean"
-  },
-  {
-    "id": "likez-commentez-repostez",
-    "titre": "Le \"Likez, commentez, repostez\" : radiographie d'un réflexe devenu compulsion",
-    "resume": "",
-    "categorie": "humian",
-    "date": "2026-04-29",
     "auteur": "Shams & Dean"
   }
 ]
