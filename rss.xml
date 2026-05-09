@@ -5,13 +5,22 @@
     <link>https://shamsetdean.github.io/humiAn/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Wed, 29 Apr 2026 05:48:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 08:25:36 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams &amp; Dean</managingEditor>
     <category>Technologie</category>
     <category>Numérique</category>
     <ttl>1440</ttl>
+    <item>
+      <title>Instagram et le chiffrement : un retrait révélateur</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=instagram-chiffrement-retrait-2026</link>
+      <description>Meta retire le chiffrement de bout en bout des messages Instagram, invoquant un manque d'adoption. L'argument tient en apparence. En réalité, c'est un arbitrage entre obligations légales, modération et intérêts économiques. Un choix stratégique, pas un aveu d'échec.</description>
+      <pubDate>Sat, 09 May 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>Tech</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=instagram-chiffrement-retrait-2026</guid>
+    </item>
     <item>
       <title>Le "Likez, commentez, repostez" : radiographie d'un réflexe devenu compulsion</title>
       <link>https://shamsetdean.github.io/humiAn/?article=likez-commentez-repostez</link>
@@ -182,15 +191,6 @@
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=adobe-firefly-custom-identite</guid>
-    </item>
-    <item>
-      <title>Windows, macOS, Linux — Trois visions du même métier</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=windows-macos-linux</link>
-      <description>Choisir un système d'exploitation revient à trancher entre trois philosophies de travail. Windows impose sa polyvalence universelle. macOS mise sur une cohérence absolue. Linux offre une liberté totale, quitte à exiger de la patience.</description>
-      <pubDate>Wed, 25 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Tech</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=windows-macos-linux</guid>
     </item>
   </channel>
 </rss>
