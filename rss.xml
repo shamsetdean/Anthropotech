@@ -5,13 +5,22 @@
     <link>https://shamsetdean.github.io/humiAn/</link>
     <description>Explorer la manière dont les comportements et les innovations numériques façonnent notre quotidien.</description>
     <language>fr-FR</language>
-    <lastBuildDate>Mon, 18 May 2026 04:44:10 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 04:56:17 +0000</lastBuildDate>
     <atom:link href="https://shamsetdean.github.io/humiAn/rss.xml" rel="self" type="application/rss+xml"/>
     <copyright>Copyright 2026 Guettaf Shams — CC BY-NC-ND 4.0</copyright>
     <managingEditor>Shams &amp; Dean</managingEditor>
     <category>Technologie</category>
     <category>Numérique</category>
     <ttl>1440</ttl>
+    <item>
+      <title>Siri change de cap : une IA à la sauce Apple</title>
+      <link>https://shamsetdean.github.io/humiAn/?article=siri-ios-27-nouvelle-generation</link>
+      <description>Apple prépare avec iOS 27 une version de Siri qui n'a plus grand-chose à voir avec l'assistant d'origine. Interface de conversation, modèles tiers sous le capot, confidentialité en argument central. Un virage stratégique autant qu'un aveu de retard.</description>
+      <pubDate>Mon, 18 May 2026 08:00:00 +0000</pubDate>
+      <author>Shams &amp; Dean</author>
+      <category>OS</category>
+      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=siri-ios-27-nouvelle-generation</guid>
+    </item>
     <item>
       <title>Instagram et le chiffrement : un retrait révélateur</title>
       <link>https://shamsetdean.github.io/humiAn/?article=instagram-chiffrement-retrait-2026</link>
@@ -182,15 +191,6 @@
       <author>Shams &amp; Dean</author>
       <category>Hum{i}An</category>
       <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=proces-ecrans-algorithmes</guid>
-    </item>
-    <item>
-      <title>Adobe Firefly Custom : ton style, ton IA, mais à qui appartient le résultat ?</title>
-      <link>https://shamsetdean.github.io/humiAn/?article=adobe-firefly-custom-identite</link>
-      <description>Adobe permet d'entraîner une IA sur tes propres créations. Gain de productivité évident. Mais quand la génération devient plus rapide que le raisonnement, à qui appartient vraiment le résultat ?</description>
-      <pubDate>Wed, 25 Mar 2026 08:00:00 +0000</pubDate>
-      <author>Shams &amp; Dean</author>
-      <category>Hum{i}An</category>
-      <guid isPermaLink="true">https://shamsetdean.github.io/humiAn/?article=adobe-firefly-custom-identite</guid>
     </item>
   </channel>
 </rss>
